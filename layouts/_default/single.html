@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="article">
+  <div class="article__layout">
+    <aside class="toc" aria-label="Inhaltsverzeichnis">
+      <a class="toc__back" href="{{ "/" | relURL }}">← Alle Analysen</a>
+      <div class="toc__title">In diesem Artikel</div>
+      <nav class="toc__nav" id="toc-nav">
+        {{ .TableOfContents }}
+      </nav>
+      <div class="toc__progress" aria-hidden="true"><div class="toc__progress-bar" id="toc-progress"></div></div>
+    </aside>
+    <div class="article__content">
+      <header class="article__head">
+        <span class="eyebrow article__date">{{ .Date.Format "Jan. 2006" }}</span>
+        <h1 class="article__title">{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<p class="article__subtitle">{{ . }}</p>{{ end }}
+      </header>
+      <div class="article__body">
+        {{ .Content }}
+      </div>
+      <footer class="article__foot">
+        <a class="muted" href="{{ "/" | relURL }}">← Alle Analysen</a>
+        <span class="muted">{{ .Site.Params.author }} · {{ .Date.Format "Jan. 2006" }}</span>
+      </footer>
+    </div>
+  </div>
+</article>
+{{ end }}

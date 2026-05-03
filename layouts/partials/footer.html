@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© {{ now.Format "2006" }} {{ .Site.Params.author | default "Max Staib Ramalho" }}</span>
+    <span class="muted">Datenanalyse zur Energiewende und Waermewende</span>
+  </div>
+</footer>
+{{ if .IsPage }}
+  <script src="{{ "/js/scroll-spy.js" | relURL }}" defer></script>
+{{ end }}

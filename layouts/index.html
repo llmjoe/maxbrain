@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $hero := index $posts 0 }}
+{{ $rest := after 1 $posts }}
+
+<section class="lead">
+  <div class="lead__inner">
+    <span class="eyebrow">Datenanalyse</span>
+    <h1 class="lead__title">Was die Daten der Energiewende wirklich erzaehlen.</h1>
+    <p class="lead__subtitle">{{ .Site.Params.description }}</p>
+  </div>
+</section>
+
+{{ with $hero }}
+<section class="hero">
+  <a class="hero-card" href="{{ .RelPermalink }}">
+    <div class="hero-card__media">
+      {{ with .Params.cover }}<img src="{{ . | relURL }}" alt="" loading="lazy" />
+      {{ else }}<div class="hero-card__placeholder"></div>{{ end }}
+    </div>
+    <div class="hero-card__body">
+      <div>
+        {{ with .Params.tag }}<span class="eyebrow">{{ . }}</span>{{ end }}
+        <h2>{{ .Title }}</h2>
+        {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <div class="hero-card__meta">
+        <span class="muted">{{ .Site.Params.author }} · {{ .Date.Format "Jan. 2006" }}</span>
+        {{ with .Params.read_time }}<span class="link-arrow">{{ . }} →</span>{{ end }}
+      </div>
+    </div>
+  </a>
+</section>
+{{ end }}
+
+{{ if $rest }}
+<section class="grid">
+  <div class="grid__inner">
+    {{ range $rest }}
+    <a class="grid-card" href="{{ .RelPermalink }}">
+      <div class="grid-card__media">
+        {{ with .Params.cover }}<img src="{{ . | relURL }}" alt="" loading="lazy" />
+        {{ else }}<div class="grid-card__placeholder"></div>{{ end }}
+      </div>
+      <div class="grid-card__body">
+        <div class="grid-card__topline">
+          {{ with .Params.tag }}<span class="eyebrow">{{ . }}</span><span class="dot">·</span>{{ end }}
+          <span class="muted">{{ .Date.Format "Jan. 2006" }}</span>
+        </div>
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.read_time }}<span class="link-arrow muted">{{ . }} Lesezeit →</span>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

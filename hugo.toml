@@ -1,0 +1,36 @@
+baseURL = "https://llmjoe.github.io/maxbrain/"
+defaultContentLanguage = "de"
+title = "Max Staib Ramalho — Analyse"
+enableRobotsTXT = true
+
+[languages.de]
+  languageCode = "de-DE"
+  weight = 1
+
+[params]
+  author = "Max Staib Ramalho"
+  description = "Datenanalysen zur Energiewirtschaft, Waermewende und Foerderpolitik."
+  accentHue = 230
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+  ordered = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[minify]
+  disableHTML = false
+  disableCSS = false
+  disableJS = false

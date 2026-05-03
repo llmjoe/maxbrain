@@ -1,0 +1,28 @@
+{{- /*
+  Interactive map shortcode.
+  Usage: {{< map src="/maps/<slug>/file.html" caption="..." height="720" >}}
+  src can be:
+    - absolute path under baseURL (e.g. "/maps/foo/bar.html") — wird durch relURL aufgeloest
+    - filename relativ zur Page (e.g. "bar.html") — wird ueber Page.Resources geladen
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $caption := .Get "caption" -}}
+{{- $height := .Get "height" | default "720" -}}
+{{- $href := "" -}}
+{{- if hasPrefix $src "/" -}}
+  {{- /* urls.JoinPath haengt den absoluten Pfad korrekt an die baseURL inklusive Subpfad. */ -}}
+  {{- $href = urls.JoinPath site.BaseURL (strings.TrimPrefix "/" $src) -}}
+{{- else if hasPrefix $src "http" -}}
+  {{- $href = $src -}}
+{{- else -}}
+  {{- $resource := .Page.Resources.GetMatch $src -}}
+  {{- if $resource -}}{{- $href = $resource.RelPermalink -}}{{- end -}}
+{{- end -}}
+{{- if $href -}}
+<figure class="interactive-map">
+  <iframe src="{{ $href }}" loading="lazy" width="100%" height="{{ $height }}" style="border:0" title="{{ $caption | default $src }}"></iframe>
+  {{- with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{- else -}}
+<!-- map shortcode: resource not found: {{ $src }} -->
+{{- end -}}

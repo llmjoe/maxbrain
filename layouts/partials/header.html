@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ "/" | relURL }}">
+      <span class="site-brand__mark">M</span>
+      <span class="site-brand__name">{{ .Site.Params.author | default "Max Staib Ramalho" }}</span>
+    </a>
+    {{ if .IsPage }}
+      <div class="site-header__meta">
+        {{ with .Params.tag }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ with .Params.read_time }}<span class="muted">{{ . }} Lesezeit</span>{{ end }}
+      </div>
+    {{ else }}
+      <nav class="site-nav">
+        <a href="{{ "/" | relURL }}">Analysen</a>
+        <a href="{{ "/lebenslauf/" | relURL }}">Lebenslauf</a>
+      </nav>
+    {{ end }}
+  </div>
+</header>

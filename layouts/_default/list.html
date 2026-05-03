@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="list">
+  <div class="list__inner">
+    <header class="list__head">
+      <span class="eyebrow">{{ .Section | humanize }}</span>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="muted">{{ . }}</p>{{ end }}
+    </header>
+    <div class="list__items">
+      {{ range .Pages.ByDate.Reverse }}
+      <a class="list-item" href="{{ .RelPermalink }}">
+        <span class="muted list-item__date">{{ .Date.Format "Jan. 2006" }}</span>
+        <div class="list-item__body">
+          {{ with .Params.tag }}<span class="eyebrow">{{ . }}</span>{{ end }}
+          <h3>{{ .Title }}</h3>
+          {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+        </div>
+        {{ with .Params.read_time }}<span class="muted list-item__time">{{ . }} →</span>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
