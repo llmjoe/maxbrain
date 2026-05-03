@@ -58,9 +58,15 @@ Die Planungsseite misst deshalb nicht irgendein allgemeines Digitalisierungsgefu
 
 ## Ergebnisse
 
+![Verteilung der Readiness-Scores ueber 817 VNB](vnb_dne_readiness_buckets.png)
+
 Der erste Hauptbefund ist sektorweit: dNE-Readiness ist vor allem ein Planungsproblem. In der Low-Readiness-Gruppe liegt der Execution-Score im Mittel noch bei 59,3, der Planning-Score aber nur bei 36,1. Bei den sektorweiten Einzelbausteinen fallen `automatisierte Netzplanung` mit 13,6 Prozent und `zeitreihenbasierte Planung` mit 17,6 Prozent besonders ab.
 
+![Sektorweite Adoption einzelner Planungs- und Digital-Features](vnb_dne_feature_gaps.png)
+
 Der zweite Hauptbefund ist gegen die einfache Groessengeschichte gerichtet. Der Zusammenhang zwischen `readiness_score` und `ns_points` ist schwach, auf Log-Skala nur moderat (`0,34`). Viel enger am Gesamtbild liegen `planning_score` (`0,93`) und `digital_score` (`0,92`). Anders gesagt: Groesse hilft, aber sie erklaert die Unterschiede nicht gut genug.
+
+![Groesse (NS-Anschlusspunkte, Log-Skala) vs. Readiness-Score](vnb_dne_size_vs_readiness.png)
 
 Dafuer sprechen die drei robustesten Beispiel-Faelle.
 

@@ -50,11 +50,17 @@ Die Analyse bestand aus drei Schritten.
 
 **Schritt 1: UeNB-Zeitreihe.** Zuerst habe ich die Entgelte der vier UeNBs als Zeitreihe 2014-2024 aufgetragen. Das Ergebnis war ueberraschend klar: Vor 2023 hatte jeder UeNB eigene Entgelte. TenneT war der Ausreisser nach oben (bis 0,70 ct/kWh in 2018), TransnetBW lag am niedrigsten (0,19 ct/kWh in 2014). Ab 2018 konvergierten alle vier langsam, bis sie 2023 bei exakt 0,54 ct/kWh landeten, dem Wert nach Paragraph 24b. 2024 sprangen alle vier auf 1,17 ct/kWh. Die Konvergenz vor der Vereinheitlichung zeigt, dass die regulatorische Angleichung schon laenger lief. Der Zuschuss hat den Sprung nur kuenstlich verzoegert.
 
+![UeNB-Entgelte 2014-2024: Konvergenz und Sprung nach Paragraph 24b](netzentgelte_uenb_zeitreihe.png)
+
 **Schritt 2: Bundesland-Ranking 2023.** Als naechstes habe ich die VNB-Haushaltsnetzentgelte fuer 2023 nach Bundesland sortiert. Bremen lag bei 6,27 ct/kWh, Brandenburg bei 12,45 ct/kWh. Der Spreizungsfaktor Max/Min betrug 1,99. Das Ost-West-Muster ist sichtbar, aber nicht deterministisch: Schleswig-Holstein (12,15 ct/kWh, West) und Hamburg (10,63 ct/kWh, West) liegen ueber dem Bundesdurchschnitt von 9,23 ct/kWh, waehrend Bayern (7,82 ct/kWh, West) und Thueringen (8,33 ct/kWh, Ost) nah beieinander liegen. Die treibende Variable ist nicht Ost vs. West, sondern die Kombination aus EE-Ausbau und Siedlungsdichte.
+
+![VNB-Haushaltsnetzentgelte je Bundesland 2023, sortiert](netzentgelte_bundeslaender_ranking.png)
 
 {{< map src="/maps/netzentgelt-explosion-2024/netzentgelte_choropleth_2020_2024.html" caption="Interaktive Karte: VNB-Mittelwerte je Bundesland mit Slider 2020-2024" >}}
 
 **Schritt 3: Spreizungsfaktor-Zeitreihe und der 2024-Twist.** Dann habe ich den Spreizungsfaktor fuer jedes Jahr 2017-2025 berechnet: das Verhaeltnis des teuersten zum guenstigsten Bundesland. Das Ergebnis war kein monotoner Anstieg, sondern ein Zickzack: 1,60 (2017), 1,89 (2018), 1,68 (2019), 1,73 (2020), 1,85 (2021), 1,67 (2022), 1,99 (2023), 1,59 (2024), 1,78 (2025). Der Rueckgang 2024 auf 1,59 sah nach Entwarnung aus. War er nicht.
+
+![Spreizungsfaktor 2017-2025: Zickzack ohne klaren Trend](netzentgelte_spreizungsfaktor.png)
 
 Ein Vergleich 2023 vs. 2024 auf Bundesland-Ebene zeigte: Brandenburg blieb bei exakt 12,45 ct/kWh (+0%), Mecklenburg-Vorpommern stieg nur um 3%. Gleichzeitig legten Bayern um 35% zu (7,82 auf 10,56 ct/kWh), Bremen um 32%, NRW um 30%. Die billigen Bundeslaender holten auf, die teuren stagnierten. Das drueckte den Spreizungsfaktor rechnerisch nach unten, obwohl fast alle Bundeslaender absolut teurer wurden. Nivellierung nach oben.
 
