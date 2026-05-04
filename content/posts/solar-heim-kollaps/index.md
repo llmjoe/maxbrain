@@ -95,7 +95,7 @@ Die Segment-Zuordnung erfolgt ueber Bruttoleistungs-Bins, weil das Lage-Feld (Au
 
 Die Charts entstehen aus dieser Aggregation und zeigen erstens die rollierende Vorjahreswachstumsrate je Segment ueber 25 Quartale und zweitens die quartalsweise Mischung der Segmente am Gesamt-Zubau als gestapelter Balken.
 
-## Anhang B — Verformelung
+## Verformelung der Berechnung
 
 ```text
 Quartalsbucket:

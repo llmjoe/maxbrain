@@ -91,7 +91,7 @@ Die Aggregation lief in drei Schritten. Zuerst der einfache Anteil negativer Stu
 
 Im Verlauf wurden zwei Korrekturen nötig. Erste Korrektur: die ursprüngliche 27-Stunden-Baseline für 2018 wurde durch den externen Wert von 140 Stunden ersetzt, weil die eigene Datenbank erst im Oktober 2018 beginnt und das Rumpfjahr nicht vergleichsfähig war. Zweite Korrektur: die Day-Ahead-Tiefstwerte wurden in den regulatorischen Kontext des HMMCP-Preisfloors gestellt, nachdem die Recherche zeigte, dass der Wert -499 EUR/MWh kein freies Marktergebnis ist, sondern den europäischen Day-Ahead-Mindestpreis spiegelt.
 
-## Anhang B — Verformelung
+## Verformelung der Berechnung
 
 Sei `P(t)` der Day-Ahead-Stundenpreis in EUR/MWh zur Stunde `t`. Sei `D(t)` der Kalendertag von `t` und `T(D)` der Tagestyp aus {Werktag, Brückentag, Wochenende, Feiertag}.
 

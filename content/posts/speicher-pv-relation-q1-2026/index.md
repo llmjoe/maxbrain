@@ -87,7 +87,7 @@ Die externe Pruefung lief gegen zwei BSW-Solar-Pressemitteilungen vom 03.05.2026
 
 Der regulatorische Kontext kommt aus dem Goerg-Memorandum vom 24.04.2026 zum Referentenentwurf StromVKG. Dort sind die 10 Stunden Dauerleistung als Foerderbedingung fuer Langzeitkapazitaeten festgeschrieben. Diese Schwelle wurde in der Analyse mit der MaStR-Verteilung der Energie-zu-Leistung-Verhaeltnisse abgeglichen, soweit aus den Stammdaten plausibilisierbar.
 
-## Anhang B: Verformelung der Berechnung
+## Verformelung der Berechnung
 
 Drei Kennzahlen, eine Glaettung.
 
