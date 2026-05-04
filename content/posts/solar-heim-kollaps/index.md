@@ -4,7 +4,7 @@ date: '2026-05-04'
 slug: solar-heim-kollaps
 draft: false
 subtitle: Drei Mechaniken erklären das Bild zusammen, keiner allein.
-read_time: 11 Min.
+read_time: 12 Min.
 linkedin_post: 2026-05-04_solar-heim-kollaps
 analyses:
 - 2026-05-04_solar-heim-kollaps-q1-2026
@@ -47,7 +47,13 @@ Die erste ist die Förderkürzungs-Asymmetrie. Eigenheim-Anlagen brauchen die Ei
 
 Die zweite ist die Auktions-Mechanik bei Großanlagen. Das Wachstum im Utility-Segment ist nicht das Spiegelbild des Eigenheim-Einbruchs, also nicht "Geld wandert von klein nach gross", sondern der weitgehend unabhängige Vollzug eines mehrjährigen Ausschreibungs-Pipelines. Die 9.900 Megawatt für 2026 wurden lange vor der Reiche-Debatte ausgeschrieben, die Projekte sind finanziert, die Genehmigungen laufen. Was wir im Q1 2026 sehen, ist die planmäßige Inbetriebnahme dieser Pipeline. Genau deshalb ist die Behauptung "Eigenheim fällt, weil Großanlage wächst" falsch. Die Großanlage wächst, weil Auktionen das Volumen vorab festgelegt haben.
 
-Die dritte ist der Speicher-Confounder. Im selben Quartal, in dem der PV-Zubau um sechs Prozent fällt, legt der Batteriespeicher-Zubau um 67 Prozent zu. BSW-Solar berichtet von rund zwei Gigawattstunden neu installierter Speicherkapazität zwischen Januar und März und einem Gesamtbestand von etwa 28 Gigawattstunden über 2,5 Millionen Anlagen. Eigenheim-Besitzer investieren also nicht weniger, sie investieren anders. Sie verschieben Budget von Modulen zu Speichern. Das macht den Eigenheim-Einbruch zum Teil zu einer Asset-Verschiebung innerhalb des gleichen Haushalts und nicht zu einem reinen Rückzug aus der Energiewende-Investition. Für die politische Diagnose ist das wichtig: Der Bürger zieht sich nicht aus dem Strommarkt zurück, er optimiert sein Eigenverbrauchs-Profil ohne neue Erzeugung. Die Erzeugungs-Säule schwächt sich, die Speicher-Säule wächst.
+Die dritte ist die Speicher-Bündel-Mechanik. Hier hat eine Folge-Auswertung den ursprünglichen Speicher-Confounder zerlegt. Auf der Branchenebene meldet BSW-Solar Q1 2026 einen Speicherzubau von plus 67 Prozent gegenüber Vorjahr, getrieben fast ausschließlich von Großbatterien ab zehn Megawatt. Auf der Heim-Ebene zeigt das Marktstammdatenregister ein anderes Bild. Heim-Speicher unter 30 Kilowatt fielen Q1 2025 zu Q1 2026 von rund 123.000 auf 109.000 Anlagen, also minus elf Prozent. Heim-PV fiel im gleichen Vergleich um neunundzwanzig Prozent. Beide Reihen bewegen sich nach unten, der Speicher fällt nur weniger steil.
+
+Der Grund liegt in der Kopplung. 55 Prozent der neuen Heim-PV-Anlagen Q1 2026 wurden mit MaStR-verknüpftem Speicher gleichzeitig registriert. Q1 2024 waren es noch 9,5 Prozent, Q1 2025 schon 39 Prozent. Heim-PV ohne Speicher ist 2026 die Minderheit geworden. Wenn Heim-PV einbricht, bricht der zugehörige Bündel-Speicher mechanisch mit ein. Es gibt also keine "Asset-Verschiebung weg von PV hin zu Speicher" im Eigenheim-Segment. Es gibt eine Bündel-Bewegung, die als Ganzes nach unten geht. Eigenheim-Besitzer investieren in Q1 2026 nicht anders, sie investieren weniger, beides Mal.
+
+![Anteil der neuen Heim-PV-Anlagen mit MaStR-verknüpftem Speicher pro Quartal: Q1 2024 9,5 Prozent, Q1 2026 55 Prozent](pv_speicher_quote_quartal.png)
+
+Für die politische Diagnose hat das eine andere Pointe als ursprünglich vermutet. Der Bürger-Rückzug ist nicht ein Wechsel der Asset-Klasse, sondern eine Verkleinerung des gesamten Heim-Energiewende-Pakets. Förderkürzung im PV-Bereich trifft also nicht nur die Modul-Investition, sondern reduziert über die Bündel-Mechanik auch die zugehörige Speicher-Investition. Die Erzeugungs-Säule schwächt sich, die Heim-Speicher-Säule schwächt sich mit, nur langsamer. Die "Speicher-Säule wächst"-Erzählung gilt für Großbatterien, nicht für Heim.
 
 Wer den Befund ernst nimmt, sieht damit etwas anderes als die Industrie-Strompreis-Geschichte. Er sieht eine regulatorisch erzeugte Asymmetrie, in der Förderkürzung das eine Segment trifft und Auktionen das andere puffern. Er sieht eine Bürger-Mittelschicht, die ihr Investitionsbudget umlenkt, weil sich die Wirtschaftlichkeitsrechnung verschiebt. Und er sieht institutionelles Kapital, das die Energiewende-Erzählung von der dezentralen Bürger-Beteiligung zur Großanlagen-Pipeline umschreibt, ohne dass diese Verschiebung jemand explizit beschlossen hätte.
 
@@ -63,7 +69,7 @@ Erstens, die Verschiebung ist älter als die Reiche-Ankündigung. Der erste Refl
 
 Zweitens, der gesunkene Haushaltsstrompreis ist nicht Hintergrund-Kosmetik, sondern ein eigener Erklärungsbeitrag. Die ursprüngliche Formulierung "gleicher Strompreis, gleiche Zinsen" lässt sich nicht halten. Der BDEW-Datenpunkt von 37,0 Cent ist gegenüber den Vorjahreshöchstwerten ein Rückgang. Das schwächt den Eigenverbrauchs-Case und stützt die Energiepreis-Hypothese als Erklärungskonkurrent zur Förderpolitik. Beide wirken in dieselbe Richtung, was die Trennung der Effekte methodisch schwierig macht.
 
-Drittens, der Speicher-Boom war im ursprünglichen Frame nicht enthalten und musste nachgetragen werden. Ohne den Speicher-Confounder wirkt der Eigenheim-Rückzug dramatischer als er ist. Mit ihm wird klar, dass die Investitionsbereitschaft im Haushaltsbereich existiert, nur eben in eine andere Asset-Klasse fliesst.
+Drittens, der Speicher-Boom war im ursprünglichen Frame als möglicher Gegenbefund vermutet und durch eine Folge-Auswertung dann zerlegt. Die Branchen-Pressemitteilung ist GWh-zentriert und stark von Großbatterien getrieben. Auf Heim-Ebene zeigt das Marktstammdatenregister, dass Speicher und PV gemeinsam nach unten gehen, weil 55 Prozent der neuen Heim-PV mit Speicher gebündelt registriert werden. Damit verschwindet das ursprüngliche Bild "Bürger investiert in Speicher statt in PV". Heim-PV und Heim-Speicher sind ein gemeinsames Investitionspaket geworden und schrumpfen gemeinsam.
 
 Die Hypothese steht damit auf "in Arbeit, richtungsweise gestützt". Die strukturelle Beobachtung ist robust. Die kausale Trennung zwischen Förderpolitik, Strompreis und Marktsättigung steht aus.
 

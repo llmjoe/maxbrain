@@ -1,14 +1,14 @@
 ---
-title: 'Speicher gegen PV: Wie Q1 2026 das Verhältnis verschiebt'
+title: 'Speicher in Deutschland: zwei Welten, nicht ein Markt'
 date: '2026-05-04'
 slug: speicher-pv-relation-q1-2026
 draft: false
-subtitle: Pro Gigawatt PV kommen 380 MW Speicher. Höchster Q1-Wert seit 2020. Was
-  das Marktdesign daraus nicht liest.
+subtitle: Heim-Speicher folgt Heim-PV nach unten. Großbatterien wachsen alleine. Zwei
+  Märkte, zwei Logiken, zwei Reformbedarfe.
 tag: speicher
 tags:
 - speicher
-read_time: 10 Min.
+read_time: 13 Min.
 linkedin_post: 2026-05-04_speicher-pv-relation-q1-2026
 analyses:
 - 2026-05-04_speicher-pv-relation-q1-2026
@@ -17,35 +17,41 @@ hypothesis: 2026-05-04_speicher-überholt-erzeugung-q1-2026
 
 ## Auslöser
 
-Clean Energy Wire hat am 04.05.2026 in seiner Daily eine BSW-Solar-Auswertung der MaStR-Daten zitiert: PV-Zubau Q1 2026 minus 6% gegen Vorjahr, Batteriespeicher-Zubau plus 67%, Bestand jetzt 28 GWh über rund 2,5 Millionen Anlagen. Im selben Aufmacher fordert Carsten Körnig vom BSW, Batterien im geplanten Capacity-Market-Tender nicht zu diskriminieren. Zwei Tage zuvor hatte die Kanzlei Goerg den Referentenentwurf zum Stromversorgungs-Kapazitätsgesetz (StromVKG) durchgearbeitet und festgehalten, dass die geplante Auktion für Langzeitkapazitäten 10 Stunden Dauerleistung verlangt, eine Schwelle, die heutige Batteriespeicher faktisch ausschließt. Drei Signale am selben Tag, die in dieselbe Richtung zeigen. Das hat mich in die MaStR-Rohdaten geschickt.
+Clean Energy Wire hat am 04.05.2026 in seiner Daily eine BSW-Solar-Auswertung der MaStR-Daten zitiert: PV-Zubau Q1 2026 minus 6 Prozent gegen Vorjahr, Batteriespeicher-Zubau plus 67 Prozent, Bestand jetzt 28 GWh über rund 2,5 Millionen Anlagen. Im selben Aufmacher fordert Carsten Körnig vom BSW, Batterien im geplanten Capacity-Market-Tender nicht zu diskriminieren. Zwei Tage zuvor hatte die Kanzlei Goerg den Referentenentwurf zum Stromversorgungs-Kapazitätsgesetz (StromVKG) durchgearbeitet und festgehalten, dass die geplante Auktion für Langzeitkapazitäten 10 Stunden Dauerleistung verlangt, eine Schwelle, die heutige Batteriespeicher faktisch ausschließt. Drei Signale am selben Tag, die scheinbar in dieselbe Richtung zeigen. Das hat mich in die MaStR-Rohdaten geschickt. Was dort steht, ist anders als die Schlagzeile.
 
 ## Hauptbefund
 
-Pro Gigawatt PV-Zubau kommen in Q1 2026 deutschlandweit 380 MW Batteriespeicher dazu. Das ist das höchste Q1-Verhältnis seit 2020. In absoluten Zahlen aus dem Marktstammdatenregister: 3,04 GW PV gegen 1,15 GW Speicher. Vor einem Jahr waren es noch 3,73 GW PV und 1,03 GW Speicher, das Verhältnis lag bei 28%. Jetzt 38%.
+Der deutsche Speichermarkt zerfällt in zwei Welten, und sie folgen unterschiedlichen Logiken.
 
-Die Branche hat den Trend früher entdeckt. BSW Solar meldet 3,51 GWp PV (-6% YoY) und über 2 GWh neuer Speicherkapazität (+67% YoY). Der Unterschied zwischen MaStR und BSW erklärt sich durch Nachmeldungsverzug. Die BNetzA rechnet bei aktuellen Monatsauswertungen standardmäßig 15% obendrauf. In den nächsten sechs Monaten korrigiert sich der MaStR-Wert erfahrungsgemäß um 10 bis 25% nach oben. Die Richtung bleibt aber stabil: PV gibt nach, Speicher hält das Tempo.
+**Welt 1, Heim-Speicher: Bündel-Markt mit der PV gekoppelt.** Q1 2026 wurden 86.000 neue Heim-Speicher unter 30 Kilowatt registriert, davon 79 Prozent gleichzeitig mit einer PV-Anlage. Die Bundle-Quote, also der Anteil neuer Heim-PV-Anlagen mit gleichzeitig registriertem MaStR-verknüpftem Speicher, ist innerhalb von zwei Jahren von 9,5 Prozent (Q1 2024) auf 55 Prozent (Q1 2026) gesprungen. Heim-PV ohne Speicher ist 2026 die Minderheit geworden. Wenn Heim-PV einbricht, bricht Heim-Speicher mechanisch mit. Die Zahlen: Heim-Speicher Q1 2025 zu Q1 2026 minus 11 Prozent. Heim-PV im gleichen Vergleich minus 29 Prozent. Beide Reihen zeigen nach unten, der Speicher fällt nur weniger steil, weil ein wachsendes Stand-Alone-Segment einen Teil der PV-Bremse abfängt.
 
-Wichtige Einschränkung gleich zu Anfang. Auf rollender 4-Quartals-Summe sind beide Reihen leicht negativ. Speicher minus 1,4% YoY, PV minus 7,1%. Das ist kein Crossover und kein "Speicher überholt Erzeugung". Das ist eine Tempo-Differenz. PV fällt fünfmal schneller. Die strukturelle Bewegung steckt nicht im Wachstum, sondern im Verhältnis.
+**Welt 2, Großbatterie: Stand-Alone-Markt mit eigener Wachstumskurve.** 183 Anlagen ab 10 Megawatt halten 43 Prozent der gesamten installierten Speicher-Leistung, obwohl sie nur 0,008 Prozent aller Anlagen sind. Davon hat keine einzige eine PV-Verknüpfung in MaStR. Q1 2020 bis Q1 2022 lag der Großbatterie-Quartalszubau bei null bis 80 MW. Seit Q4 2022 zieht er an, Q1 2025 bei 254 MW, Q1 2026 bei 347 MW. Diese Welle hat mit dem Heim-Markt nichts zu tun. Sie wird von Spread-Erlösen, Frequenzregelung und perspektivisch Capacity-Market-Tender getrieben.
 
-![Verhältnis Speicher-GW pro PV-GW Q1 2020 bis Q1 2026: 38 Prozent in Q1 2026 als höchster Q1-Wert](speicher_pv_relation_verhaeltnis.png)
+Die ursprüngliche BSW-Schlagzeile "Speicher plus 67 Prozent" stimmt rechnerisch, aber sie ist GWh-zentriert und wird ganz überwiegend von der Großbatterie-Welle gespeist. Auf Anlagen-Ebene und auf der Heim-Klasse sieht das Bild umgekehrt aus.
 
-![PV- und Speicher-Quartalszubau in GW seit Q1 2020: PV bricht Q1 2026 ein, Speicher hält das Tempo](speicher_pv_relation_zubau_quartal.png)
+![Drei Linien auf gemeinsamer Zeitachse: Heim-PV und Heim-Speicher fallen Q1 2026 parallel, Großbatterie ab 10 MW wächst eigenständig](zwei_welten_speicher_pv.png)
+
+![Wenige Großbatterien tragen einen großen Anteil des Leistungsvolumens: 99 Prozent der Anlagen sind unter 30 kW, 43 Prozent der Leistung in 183 Anlagen ab 10 MW](speicher_groessen_verteilung.png)
 
 ## Was der Mainstream-Frame verdeckt
 
 Die politische Debatte um Versorgungssicherheit dreht aktuell um Gas. Der Capacity-Market-Entwurf des Wirtschaftsministeriums ist primär als Gaskraftwerks-Tender konzipiert, mit dem Argument, Lastdeckung in Dunkelflauten brauche steuerbare thermische Erzeugung. Die 10-Stunden-Dauerleistungsregel im Referentenentwurf folgt aus dieser Logik. Sie bewertet Kapazität nach der Fähigkeit, über lange Phasen hinweg Strom zu liefern, nicht nach der Fähigkeit, Lastspitzen zu glätten oder Erzeugungstäler zu überbrücken.
 
-Wer den Mainstream-Frame ernst nimmt, sieht das deutsche Speicher-Wachstum als Nebenkriegsschauplatz. Heimspeicher für Eigenverbrauchsoptimierung, ein bisschen Frequenzregelung. Nice to have, aber nicht systemkritisch. Genau diese Lesart trifft die aktuelle Marktbewegung nicht. Der MaStR-Befund Q1 2026 zeigt, dass der Investitions-Schwerpunkt sich verschiebt, ohne dass das Marktdesign mitzieht. Das Verhältnis 380 MW Speicher pro GW PV ist kein Lobby-Hype, es ist ein Stammdatenwert aus dem amtlichen Register.
+Was die Mainstream-Erzählung "Solar bricht ein, Speicher boomen" außerdem verdeckt: Es boomen nicht "die Speicher", sondern eine ganz spezifische Klasse, nämlich die 183 Großbatterien. Heim-Speicher boomen nicht, sie schrumpfen, weil sie an die einbrechende Heim-PV gekoppelt sind. Diese beiden gegenläufigen Bewegungen mitteln sich auf der GW-Aggregat-Ebene zu einem leichten Plus, in der GWh-Branchenmeldung sogar zu einem Rekord. Die Bündel-Quote 55 Prozent ist der Beleg, dass der Heim-Markt nicht zwei Asset-Klassen ausbalanciert, sondern eine einzige Investitionsentscheidung mit zwei verknüpften Komponenten ist.
 
-Der zweite blinde Fleck ist segmentaler Natur. Der PV-Rückgang kommt nicht aus der Fläche, sondern aus den Dächern. Heim-PV minus 21% YoY, Gewerbedach minus 33%, Freiflächen-PV plus 20%. Auf der Speicherseite spiegelbildlich: Heimspeicher stagnieren, Gewerbespeicher plus 40%, Großspeicher fast verfünffacht. Was aussieht wie ein PV-Speicher-Ausgleich, ist in Wahrheit ein Klassenwechsel. Stand-Alone-Großspeicher boomen, während das private Dach kollabiert. Der Mainstream-Frame "die Energiewende stockt" verfehlt beide Bewegungen gleichzeitig.
+Der zweite blinde Fleck ist segmentaler Natur. Der PV-Rückgang kommt nicht aus der Fläche, sondern aus den Dächern. Heim-PV minus 21 Prozent YoY, Gewerbedach minus 33 Prozent, Freiflächen-PV plus 20 Prozent. Auf der Speicherseite zeigt das MaStR ein verwandtes Bild: Heim-Speicher schrumpfen mit der Heim-PV, Großbatterien wachsen für sich. Was aussieht wie ein PV-Speicher-Ausgleich, ist in Wahrheit zweimal Klassenwechsel: weg vom privaten Dach hin zur Freifläche bei PV, weg vom Bündel-Markt hin zum Stand-Alone-Großspeicher bei Speicher.
 
 ## Wo die eigentliche Diagnose liegt
 
-Die Reform-Diagnose ist nicht "Speicher hat PV überholt". Die Diagnose ist subtiler. Erstens, das Marktdesign vergütet weiter vorrangig Erzeugung, der Markt baut aber Flexibilität. Zweitens, je länger diese Lücke offen bleibt, desto teurer wird sie. Drittens, die regulatorische Fixierung auf 10 Stunden Dauerleistung sortiert genau die Asset-Klasse aus, die der Markt gerade in den Bestand schiebt.
+Die Reform-Diagnose ist nicht "Speicher hat PV überholt", auch nicht "Markt baut Flexibilität statt Erzeugung". Sie ist: zwei Märkte, zwei Probleme.
 
-Das StromVKG ist nicht durch Böswilligkeit so geschnitten. Die 10-Stunden-Regel kommt aus der klassischen Versorgungssicherheitsrechnung mit Gaskraftwerken als Referenzanlage. Wer Backup über 10 Stunden braucht, hat Lastsituationen im Kopf, die einen Speicher ohne erneute Ladung leerlaufen lassen würden. Das ist im Kontext einer Dunkelflaute auch nicht falsch. Es macht nur die Asset-Klasse Batteriespeicher unfähig zu kandidieren, obwohl genau diese Asset-Klasse aktuell den Investitions-Mainstream darstellt. Eine Auktion, in der nur Gaskraftwerke und überbaute Pumpspeicher antreten können, ist eine Auktion, die das Marktgeschehen aussortiert.
+**Heim-Welt-Diagnose**: Wer das Heim-Segment retten will, muss bei der PV ansetzen, nicht bei Speicher-Förderung. Solange 55 Prozent der Heim-PV als Bundle gebaut werden, zieht jede PV-Bremse den Speicher mit nach unten. Die im Solar-Heim-Befund dokumentierte Förderkürzungs-Asymmetrie, also das gestrichene Einspeisevergütungs-Versprechen ab 2027 für Anlagen unter 25 Kilowatt, ist damit kein PV-spezifisches Politikum. Es ist eine doppelte Investitionsbremse für das Heim-Energiewende-Paket.
 
-Die saubere Reform-Antwort ist nicht "Bedingungen lockern". Sie ist "Auktion segmentieren". Eine separate Spalte für Kurzzeitflexibilität, mit einer 2 bis 4-Stunden-Schwelle, mit eigener Mengenrechnung. Wer Last glätten oder Frequenz halten will, braucht andere Anlagen als wer Erzeugungstäler überbrückt. Die Niederlande, Italien und Großbritannien fahren ihre Capacity-Market-Tender mit segmentierten Kategorien. Deutschland fährt eine pauschale Schwelle und produziert dadurch eine Verzerrung, die in den Stammdaten bereits ablesbar ist.
+**Großbatterie-Welt-Diagnose**: Wer die Großbatterien strukturell sichtbar machen will, muss am StromVKG-Auktionsdesign drehen. Die 10-Stunden-Regel im Referentenentwurf vom April 2026 sortiert genau die Asset-Klasse aus, die in den Stammdaten gerade die stärkste Wachstumskurve fährt. Eine Auktion, in der nur Gaskraftwerke und überbaute Pumpspeicher antreten können, ist eine Auktion, die das Marktgeschehen ausblendet. Diese Diagnose ist nicht durch Böswilligkeit entstanden, die 10-Stunden-Regel kommt aus der klassischen Versorgungssicherheitsrechnung mit Gaskraftwerken als Referenzanlage. Sie blendet nur Batteriespeicher aus, weil deren typisches Energie-zu-Leistung-Verhältnis bei 2 bis 4 Stunden liegt.
+
+Die saubere Reform-Antwort ist nicht "Bedingungen lockern". Sie ist "Auktion segmentieren". Eine separate Spalte für Kurzzeitflexibilität, mit einer 2 bis 4-Stunden-Schwelle, mit eigener Mengenrechnung. Die Niederlande, Italien und Großbritannien fahren ihre Capacity-Market-Tender mit segmentierten Kategorien. Deutschland fährt eine pauschale Schwelle und produziert eine Verzerrung, die in den Stammdaten bereits ablesbar ist.
+
+Was die Diagnose nicht sagt: Der Großbatterie-Boom kompensiert nicht den Heim-Einbruch. Es sind unterschiedliche Investoren mit unterschiedlichen Renditeerwartungen, unterschiedlichen Asset-Klassen-Charakteristika und unterschiedlichen regulatorischen Hebeln. Die "Energiewende-Speicher-Säule wächst"-Erzählung gilt für 183 Anlagen. Die übrigen 2,4 Millionen folgen dem Heim-PV-Markt nach unten.
 
 ## Internationaler Vergleich
 
@@ -57,13 +63,15 @@ Das deutsche Verhältnis von 38% in Q1 2026 ist also weder ein Ausreißer nach o
 
 ## Was die Untersuchung gelernt hat
 
-Die Hypothese ist im Verlauf in drei Punkten korrigiert worden.
+Die Hypothese ist im Verlauf in drei Punkten korrigiert und einmal stark umgebaut worden.
 
-Bestätigt: Die Trendrichtung. PV gibt nach, Speicher hält das Tempo, das Verhältnis sitzt strukturell höher als in jedem Q1 seit 2020. Sowohl MaStR als auch BSW Solar zeigen das, wenn auch mit unterschiedlichen Absolutwerten.
+Verworfen: Die ursprüngliche These "Markt baut Flexibilität statt Erzeugung, Speicher überholt PV". Eine Folge-Auswertung der MaStR-Stammdaten auf Anlagen-Ebene zeigt, dass Heim-Speicher nicht entkoppelt vom PV-Markt wachsen, sondern an ihn gekoppelt sind. 55 Prozent der neuen Heim-PV werden Q1 2026 als Bundle mit Speicher registriert, der Bundle-Anteil ist innerhalb von zwei Jahren von 9,5 auf 55 Prozent gestiegen. Heim-Speicher fällt -11 Prozent YoY, Heim-PV fällt -29 Prozent. Beide bewegen sich nach unten, nicht parallel weg von einander.
 
-Relativiert: Die ursprungliche Behauptung "Speicher überholt Erzeugung in der Wachstumsrate". Auf der saisonbereinigten 4-Quartals-Summe sind beide Reihen leicht negativ. Es ist keine Wachstumsstory, sondern eine Verlangsamungsdifferenz. Die Investitionsrichtung des Marktes ist ablesbar, aber der Effekt ist niveau-basiert, nicht wachstumsbasiert.
+Geschärft: Die "Speicher boomt" - Erzählung gilt für 183 Großbatterien ab 10 Megawatt. Diese sind alle Stand-Alone, alle ohne PV-Verknüpfung in MaStR, und ihr Q1-2026-Zubau von 347 MW liegt 6x über Q1 2024. Auf der GWh-Aggregat-Ebene erklärt diese Klasse den BSW-Befund "+67 Prozent YoY" fast vollständig.
 
-Geschärft: Die Kompositionsperspektive. Ohne den segmentalen Innenblick auf Heim-PV, Gewerbedach, Freifläche und auf Großspeicher gegen Heimspeicher wäre der Befund eindimensional. Der eigentliche Investitions-Shift ist ein Anlagenklassen-Shift, weg vom privaten Dach, hin zu utility-scale Stand-Alone-Speichern und Freiflächen-PV. Das ist ein anderer Befund als "der Markt baut weniger PV", auch wenn es auf der GW-Aggregat-Ebene gleich aussieht.
+Bestätigt: Das Marktdesign trifft beide Welten unterschiedlich. Heim-Welt blutet über die PV-Bremse aus, Großbatterie-Welt droht über die StromVKG-10-Stunden-Regel aus dem Capacity-Market-Tender ausgeschlossen zu werden. Die Reform-Antwort ist nicht eine, sondern zwei: PV-Förderkürzungs-Logik überdenken (Heim) und Auktion segmentieren (Großbatterie).
+
+Relativiert: Die Schlagzeile "380 MW Speicher pro GW PV". Rechnerisch korrekt, narrativ irreführend, weil sie zwei nicht zusammenhängende Märkte zu einer Quote summiert. Die GW-Quote vermischt Heim-Bündel mit Großbatterien. Die ehrliche Lesart ist: Pro GW Heim-PV kommen aktuell rund 0,38 GW Heim-Speicher. Daneben, und unabhängig davon, kommen Großbatterien mit eigener Logik in eigenen Mengen.
 
 ## Grenzen
 
@@ -128,6 +136,34 @@ yoy_rolling_4q(Q1 2026, Speicher) = -1,4%
 Die Wahl Bruttoleistung statt Nettonennleistung für Speicher folgt der BSW-Konvention. Der Unterschied liegt in der Praxis bei rund 5 bis 7%. PV bleibt bei Nettonennleistung, weil BNetzA- und BSW-Statistiken sie so ausweisen. Eine Vergleichbarkeit Speicher-AC gegen PV-DC bleibt eine methodische Einschränkung der GW-Ratio. Eine GWh-Sicht wäre vergleichbarer, scheitert aber an der Bereinigungsbedürftigkeit von `NutzbareSpeicherkapazitaet`.
 
 Filter und Ausschlüsse: Anlagen ohne Inbetriebnahmedatum oder ohne Betriebsstatus In Betrieb sind ausgeschlossen. Storno-Einträge sind ausgeschlossen. Anlagen mit Inbetriebnahme vor 2020 sind ausgeschlossen, weil die Reihen für den Vergleich auf einen einheitlichen Zeitraum normiert sind.
+
+Bundle-Quote (Anteil neuer Heim-PV mit MaStR-verknüpftem Speicher):
+
+```text
+heim_pv(q) = { PV-Anlagen mit Bruttoleistung < 10 kWp und Inbetriebnahme in q }
+
+bundle(p) = exists Speicher s mit
+              s.GemeinsamRegistrierteSolareinheitMastrNummer = p.EinheitMastrNummer
+              und |Inbetriebnahmedatum_s - Inbetriebnahmedatum_p| <= 30 Tage
+              und Bruttoleistung_s < 30 kW
+
+bundle_quote(q) = | { p in heim_pv(q) : bundle(p) } | / | heim_pv(q) |
+```
+
+Q1-Werte: bundle_quote(Q1 2024) = 9,5%, bundle_quote(Q1 2025) = 39,0%, bundle_quote(Q1 2026) = 55,0%.
+
+Großbatterie-Filter:
+
+```text
+gross_batterie(q) = { Speicher mit Bruttoleistung >= 10.000 kW
+                       und Inbetriebnahme in q
+                       und Betriebsstatus = In Betrieb }
+
+n_gross(q) = | gross_batterie(q) |
+mw_gross(q) = sum( Bruttoleistung_i / 1000 ) für i in gross_batterie(q)
+```
+
+Q1-Werte: n_gross(Q1 2024) = 4 Anlagen / 97 MW, n_gross(Q1 2025) = 7 / 254 MW, n_gross(Q1 2026) = 9 / 347 MW.
 
 ## Quellen
 
