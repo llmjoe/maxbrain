@@ -9,96 +9,97 @@ subtitle: Wie der Wegfall des 24b-Bundeszuschusses 2024 die UeNB-Entgelte verdop
 tag: Regulierung
 tags:
 - Regulierung
-read_time: 7 Min.
+read_time: 8 min
 linkedin_post: 2026-05-01_netzentgelt-explosion-2024
 analyses:
 - 2026-04-30_netzentgelt-explosion-2024
-hypothesis: 2026-04-23_netzentgelt-explosion-2024
+hypothesis: 2026-04-23_netzentgelte-regionale-armut
 ---
 
-## Ausgangspunkt
+## Auslöser
 
-2024 stiegen die Uebertragungsnetzentgelte in Deutschland um 117%. Gleichzeitig sank die regionale Spreizung der Verteilnetzentgelte. Das klingt nach einer guten und einer schlechten Nachricht. In Wirklichkeit ist beides dieselbe Geschichte, und sie ist komplizierter als es auf den ersten Blick aussieht.
+Im November 2023 hat das Bundesverfassungsgericht den Nachtragshaushalt 2021 fuer verfassungswidrig erklaert. Der Bundeszuschuss zu den Uebertragungsnetzentgelten nach Paragraph 24b EnWG, der 2023 noch 12,84 Mrd. EUR betrug, war damit ohne Finanzierungsgrundlage. Fuer das erste Halbjahr 2024 wurde der bereits geplante Zuschuss von 5,5 Mrd. EUR gestrichen. Der naechste BNetzA-Monitoringbericht zeigte das Ergebnis: 117 Prozent mehr UeNB-Entgelt von einem Jahr aufs andere.
 
-Dieser Artikel dokumentiert die Analyse hinter dem LinkedIn-Post zur Netzentgelt-Spreizung. Er erklaert, wie die Hypothese entstanden ist, welche Daten sie stuetzen, wo die Grenzen liegen und warum der Rueckgang der Spreizung 2024 keine Entwarnung ist.
+Im selben Bericht stand eine zweite, scheinbar gegenlaeufige Zahl. Die regionale Spreizung der Verteilnetzentgelte zwischen Bremen und Brandenburg sank 2024 wieder. Eine schlechte und eine gute Nachricht? In Wirklichkeit ist beides dieselbe Geschichte.
 
-## Wie die Hypothese entstanden ist
+## Hauptbefund
 
-Die Ausgangsvermutung war einfach: Der Wegfall des Bundeszuschusses nach Paragraph 24b EnWG hat die UeNB-Entgelte 2024 schlagartig verdoppelt, und die regionale Spreizung der VNB-Netzentgelte hat 2023 einen neuen Hoechststand erreicht. Beides steht in den BNetzA-Monitoringberichten, wird aber selten zusammen betrachtet.
+**Die Uebertragungsnetzentgelte sind 2024 von 0,54 auf 1,17 ct/kWh gesprungen, eine Verdopplung in einem Jahr.** Alle vier Uebertragungsnetzbetreiber (50Hertz, Amprion, TenneT, TransnetBW) liegen exakt auf demselben Wert, weil der Bundeszuschuss bis 2023 die Entgelte kuenstlich auf einen einheitlichen Korridor gehalten hatte. Mit dem Wegfall des Paragraph-24b-Zuschusses zeigt sich die wahre Hoehe.
 
-Plausibel war das, weil der Bundeszuschuss (12,84 Mrd. EUR fuer 2023, finanziert ueber das Strompreisbremsegesetz) die UeNB-Entgelte kuenstlich niedrig gehalten hatte. Als das Bundesverfassungsgericht im November 2023 den Nachtragshaushalt kippte, fiel die Finanzierungsgrundlage weg. Der fuer das erste Halbjahr 2024 geplante Zuschuss von 5,5 Mrd. EUR wurde gestrichen.
+**Die regionale Spreizung der Verteilnetzentgelte sank 2024 von 1,99 auf 1,59, hat aber nichts mit Entwarnung zu tun.** Der Rueckgang kommt zustande, weil die guenstigen Bundeslaender (Bayern +35 Prozent, Bremen +32 Prozent, NRW +30 Prozent) deutlich teurer wurden, waehrend die teuren stagnierten (Brandenburg unveraendert, Mecklenburg-Vorpommern +3 Prozent). Das ist Nivellierung nach oben, nicht Konvergenz nach unten. 2025 dreht das Muster wieder, der Spreizungsfaktor klettert auf 1,78.
 
-Drei Gegenhypothesen standen im Raum: Erstens, dass die Spreizung schon immer so hoch war und nur die Absolutwerte gestiegen sind. Zweitens, dass der Zuschuss-Wegfall fuer den Buerger ein Nullsummenspiel ist, weil die Kosten vorher ueber Steuern finanziert wurden. Drittens, dass die Spreizung nicht mit dem EE-Ausbau zusammenhaengt, sondern mit der Siedlungsdichte.
+In Summe: das deutsche Netzentgelt-System ist strukturell instabil. Zwei sich gegenlaeufig bewegende Effekte erzeugen Zickzack-Zeitreihen ohne klaren Trend. Wer in dem Mustern Entwarnung liest, liest falsch.
 
-Die Frage hat sich analytisch gelohnt, weil die BNetzA die Daten publiziert, aber niemand sie als Zeitreihe aufbereitet. Die Netzentgelt-Debatte wird abstrakt gefuehrt, die konkreten Zahlen kennt kaum jemand.
+## Was der Mainstream-Frame verdeckt
 
-## Datenbasis
+Die oeffentliche Kommunikation 2024 fokussierte auf zwei Dinge: den UeNB-Sprung als kurzfristigen Schock und die Hoffnung, die Spreizung sei kein dauerhaftes Problem. Beide Lesarten greifen zu kurz.
 
-Die Analyse stuetzt sich auf die Tabelle `bnetza.netzentgelte_strom` mit 1.116 Datensaetzen, extrahiert aus den BNetzA-Monitoringberichten der Jahre 2015 bis 2025.
+Erstens, weil die Bundesland-Mittelwerte die wahre Spreizung systematisch unterzeichnen. Die BNetzA-Daten geben mengengewichtete Durchschnittswerte je Bundesland. Auf Netzbetreiber-Ebene unterscheiden sich die Entgelte nach Verbraucherzentrale-Daten um bis zu 15 ct/kWh. Wenn der gewichtete Bundesland-Durchschnitt schon 1,99-fach spreizt, ist die wahre Streuung zwischen einzelnen Verteilnetzen ein Vielfaches davon.
 
-Zwei Datenstrecken:
+Zweitens, weil der Spreizungsfaktor als Kennzahl Bewegungen verschleiert. Ein Faktor 1,59 in 2024 sieht nach Annaeherung aus. In Wirklichkeit sind alle Bundeslaender in absoluten Werten teurer geworden, nur unterschiedlich stark. Brandenburg blieb bei exakt 12,45 ct/kWh. Bayern stieg von 7,82 auf 10,56 ct/kWh. Beide sind teurer als 2023, aber Bayern ist relativ schneller geworden, also schrumpft das Verhaeltnis.
 
-1. **UeNB-Entgelte 2014-2024**: Der Arbeitspreis fuer Industriekunden (Referenz: 4500 Volllaststunden, Hoechstspannungsebene HoeS) fuer die vier Uebertragungsnetzbetreiber 50Hertz, Amprion, TenneT und TransnetBW. Das ist der Referenzfall, den die BNetzA in den Monitoringberichten ausweist. Fuer Haushaltskunden gelten andere Werte, weil mehrere Netzebenen und Lastprofile in das Gesamtnetzentgelt einfliessen.
+Die wirkliche Verteilungsfrage liegt deshalb nicht im Spreizungsfaktor, sondern in der absoluten Belastung. Brandenburg-Haushalte zahlen 2024 weiterhin mehr fuer Netzentgelte als Bayern-Haushalte. Der Faktor faellt nur, weil Bayern aufholt. Aus Sicht eines Haushalts ist das keine Entlastung.
 
-2. **VNB-Haushaltsnetzentgelte 2017-2025**: Mengengewichtete Mittelwerte des Arbeitspreises fuer Haushaltskunden je Bundesland. Ohne Grundpreis (der im Bundesdurchschnitt 2024 bei 75 EUR lag, mit Maxima bis 200 EUR) und ohne Messstellenbetrieb. Diese Mittelwerte glaetten die VNB-interne Spreizung erheblich. Laut Verbraucherzentrale Bundesverband liegen die Unterschiede auf Netzbetreiberebene bei bis zu 15 ct/kWh. Der Spreizungsfaktor 1,99 auf Bundesland-Ebene ist damit eher die Untergrenze der realen Spreizung.
+## Wo die Reform-Diagnose wirklich liegt
 
-Keine Ausschluesse, keine Filter. Alle 16 Bundeslaender, alle vier UeNBs.
+Die strukturelle Diagnose ist eine andere. Das deutsche Netzentgelt-System ist seit 20 Jahren auf Kosten-Anpassung kalibriert, nicht auf Kosten-Verteilung. Wer Netz baut und Last hat, zahlt. Wer dezentral einspeist und Netz braucht, zahlt mit. Die UeNB- und VNB-Ebenen sind dabei methodisch entkoppelt: Die UeNB-Entgelte werden inzwischen bundeseinheitlich gewaelzt, die VNB-Entgelte je Netzbetreiber kalkuliert.
 
-## Vorgehen
+Diese Trennung wird in der naechsten Reformrunde anders. Im August 2024 hat die BNetzA entschieden, EE-bedingte Verteilnetzkosten ab 2025 bundesweit zu wälzen. Ab 2026 gilt ein Aufschlag fuer besondere Netznutzung von 1,56 ct/kWh. Das ist die direkte regulatorische Antwort auf die regionale Spreizung. Ob sie wirkt, zeigen die naechsten Monitoringberichte.
 
-Die Analyse bestand aus drei Schritten.
+Parallel laeuft das AgNes-Verfahren der BNetzA, das ab 2029 dynamische Netzentgelte einfuehren soll. Das ist die zweite Reform-Schicht, sie wirkt zeitlich versetzt. Wer die heutige Spreizung loesen will, hat zwei Hebel: bundesweite Waelzung als kurzfristigen Ausgleich, dynamische Netzentgelte als langfristige Standortsteuerung. Beide haben Risiken, beide werden separat heftig diskutiert. Was im aktuellen System fehlt, ist ein dritter Hebel: eine soziale Komponente, die Haushalte mit geringem Verbrauch, die ueberproportional vom Grundpreis getroffen werden, gegen die naechsten Wellen schuetzt.
 
-**Schritt 1: UeNB-Zeitreihe.** Zuerst habe ich die Entgelte der vier UeNBs als Zeitreihe 2014-2024 aufgetragen. Das Ergebnis war ueberraschend klar: Vor 2023 hatte jeder UeNB eigene Entgelte. TenneT war der Ausreisser nach oben (bis 0,70 ct/kWh in 2018), TransnetBW lag am niedrigsten (0,19 ct/kWh in 2014). Ab 2018 konvergierten alle vier langsam, bis sie 2023 bei exakt 0,54 ct/kWh landeten, dem Wert nach Paragraph 24b. 2024 sprangen alle vier auf 1,17 ct/kWh. Die Konvergenz vor der Vereinheitlichung zeigt, dass die regulatorische Angleichung schon laenger lief. Der Zuschuss hat den Sprung nur kuenstlich verzoegert.
+## Internationaler Kontext
 
-![UeNB-Entgelte 2014-2024: Konvergenz und Sprung nach Paragraph 24b](netzentgelte_uenb_zeitreihe.png)
+Im EU-Vergleich ist die deutsche Spreizung ungewoehnlich. Frankreich kennt nur eine UeNB-Ebene mit nationalem Tarif, die VNB-Ebene wird ueber regulierte Konzessionsvertraege gleichgeschaltet. Das niederlaendische Modell aehnelt dem deutschen, aber mit einer Anschluss-Kostendeckung durch den Netzbetreiber, nicht durch den Investor. Beide Laender haben deutlich kleinere Spreizungen.
 
-**Schritt 2: Bundesland-Ranking 2023.** Als naechstes habe ich die VNB-Haushaltsnetzentgelte fuer 2023 nach Bundesland sortiert. Bremen lag bei 6,27 ct/kWh, Brandenburg bei 12,45 ct/kWh. Der Spreizungsfaktor Max/Min betrug 1,99. Das Ost-West-Muster ist sichtbar, aber nicht deterministisch: Schleswig-Holstein (12,15 ct/kWh, West) und Hamburg (10,63 ct/kWh, West) liegen ueber dem Bundesdurchschnitt von 9,23 ct/kWh, waehrend Bayern (7,82 ct/kWh, West) und Thueringen (8,33 ct/kWh, Ost) nah beieinander liegen. Die treibende Variable ist nicht Ost vs. West, sondern die Kombination aus EE-Ausbau und Siedlungsdichte.
+Die deutsche Eigenheit liegt in zwei Punkten: erstens an der historisch gewachsenen Vielzahl von 866 Verteilnetzbetreibern mit eigenen Kalkulationsregeln. Zweitens an der bewussten Entscheidung, EE-Anschlusskosten direkt im jeweiligen Verteilnetz zu kalkulieren statt bundesweit zu waelzen. Diese Entscheidung steht jetzt zur Korrektur an.
 
-![VNB-Haushaltsnetzentgelte je Bundesland 2023, sortiert](netzentgelte_bundeslaender_ranking.png)
+## Was die Untersuchung gelernt hat
 
-{{< map src="/maps/netzentgelt-explosion-2024/netzentgelte_choropleth_2020_2024.html" caption="Interaktive Karte: VNB-Mittelwerte je Bundesland mit Slider 2020-2024" >}}
+Die Ausgangsvermutung lautete: die Spreizung waechst monoton, der UeNB-Sprung ist eine separate Geschichte. Beide Annahmen waren zu einfach.
 
-**Schritt 3: Spreizungsfaktor-Zeitreihe und der 2024-Twist.** Dann habe ich den Spreizungsfaktor fuer jedes Jahr 2017-2025 berechnet: das Verhaeltnis des teuersten zum guenstigsten Bundesland. Das Ergebnis war kein monotoner Anstieg, sondern ein Zickzack: 1,60 (2017), 1,89 (2018), 1,68 (2019), 1,73 (2020), 1,85 (2021), 1,67 (2022), 1,99 (2023), 1,59 (2024), 1,78 (2025). Der Rueckgang 2024 auf 1,59 sah nach Entwarnung aus. War er nicht.
+Geschaerft: die Spreizung ist nicht monoton, sondern volatil mit Zickzack-Muster zwischen 1,59 und 1,99 in nur acht Jahren. Sie schwankt staerker als die regulatorischen Entscheidungen es erklaeren koennten. Plus: der UeNB-Sprung und der Spreizungs-Rueckgang 2024 sind direkt verbunden, nicht zwei getrennte Geschichten. Beide sind Folge derselben fiskalischen Entscheidung.
 
-![Spreizungsfaktor 2017-2025: Zickzack ohne klaren Trend](netzentgelte_spreizungsfaktor.png)
+Bestaetigt: die Verteilungswirkung ist scharf. Brandenburg-Haushalte zahlen ein Vielfaches der Bremer Haushalte fuer dieselbe Kilowattstunde Netzentgelt. Wer das fuer ein Detail haelt, hat den Effekt nicht in Euro pro Jahr und Haushalt umgerechnet.
 
-Ein Vergleich 2023 vs. 2024 auf Bundesland-Ebene zeigte: Brandenburg blieb bei exakt 12,45 ct/kWh (+0%), Mecklenburg-Vorpommern stieg nur um 3%. Gleichzeitig legten Bayern um 35% zu (7,82 auf 10,56 ct/kWh), Bremen um 32%, NRW um 30%. Die billigen Bundeslaender holten auf, die teuren stagnierten. Das drueckte den Spreizungsfaktor rechnerisch nach unten, obwohl fast alle Bundeslaender absolut teurer wurden. Nivellierung nach oben.
-
-## Ergebnisse
-
-**Befund 1: UeNB-Verdopplung bestaetigt.** 0,54 auf 1,17 ct/kWh (+117%), getrieben durch den Wegfall des Bundeszuschusses nach dem BVerfG-Haushaltsurteil. Die Vereinheitlichung auf einen Wert zeigt, dass alle vier UeNBs regulatorisch gleichgeschaltet sind.
-
-**Befund 2: VNB-Rekordspreizung 2023.** Faktor 1,99 (Bremen 6,27 vs. Brandenburg 12,45 ct/kWh). Der hoechste Wert im Betrachtungszeitraum 2017-2025.
-
-**Befund 3: Nivellierung nach oben 2024.** Die Spreizung sank auf 1,59, aber nur weil die billigen Bundeslaender stark anstiegen (Bayern +35%, Bremen +32%), waehrend die teuren weitgehend stagnierten (Brandenburg +0%). Strukturell keine Entwarnung.
-
-**Befund 4: 2025 mischt die Karten neu.** Brandenburg faellt auf 10,28 ct/kWh, Hamburg schiesst auf 14,17 ct/kWh an die Spitze. Die Spreizung steigt wieder auf 1,78. Das Zickzack-Muster ohne klaren Trend zeigt ein strukturell instabiles System.
-
-**Befund 5: Die Stagnation Brandenburgs ist auffaellig.** Ein exakt gleichbleibender Wert bei einem Bundesland mit dynamischem EE-Ausbau und hoher Netzkostendynamik ist erklaerungsbeduerftig. Ob Regulierungseffekt oder Daten-Artefakt im Monitoringbericht, laesst sich aus den vorliegenden Daten nicht klaeren.
-
-## Was das fuer die Hypothese bedeutet
-
-Die Hypothese ist im Kern bestaetigt, wurde aber durch die Analyse erheblich erweitert.
-
-Die UeNB-Verdopplung durch den Paragraph-24b-Wegfall ist der einfachste Teil: klar, quantifizierbar, kausal nachvollziehbar. Die VNB-Spreizung ist komplexer. Der Rekord 2023 ist bestaetigt, aber die Zeitreihe zeigt, dass die Spreizung nicht monoton waechst, sondern schwankt. Die urspruengliche Intuition war "die Spreizung waechst", der tatsaechliche Befund ist "die Spreizung ist volatil und strukturell instabil".
-
-Der unerwartete Befund der Nivellierung nach oben 2024 war nicht Teil der Ausgangshypothese. Er zeigt, dass sinkende Spreizungsfaktoren nicht automatisch Entwarnung bedeuten, wenn sie durch allgemeine Kostensteigerungen getrieben werden.
+Relativiert: ein einzelner Bundesland-Mittelwert sagt wenig. Die Verteilungswirkung auf Netzbetreiber-Ebene ist deutlich groesser, aber in den BNetzA-Daten nur indirekt sichtbar.
 
 ## Grenzen und offene Punkte
 
-**Bundesland-Mittelwerte verschleiern die VNB-Spreizung.** Die BNetzA-Daten zeigen mengengewichtete Mittelwerte. Die wahre Spreizung auf Netzbetreiberebene ist dramatisch groesser.
+Sechs methodische Vorbehalte sind explizit zu nennen.
 
-**Grundpreis fehlt.** Die Analyse betrachtet nur den Arbeitspreis (ct/kWh). Der Grundpreis (im Bundesdurchschnitt 75 EUR/Jahr in 2024) belastet Haushalte mit geringem Verbrauch ueberproportional.
+**Bundesland-Mittelwerte verschleiern die VNB-Spreizung.** Die BNetzA publiziert mengengewichtete Mittelwerte. Die wahre Spreizung auf Netzbetreiber-Ebene ist dramatisch groesser. Die Verbraucherzentrale Bundesverband nennt Differenzen bis 15 ct/kWh.
 
-**UeNB-Referenzfall ist Industrie, nicht Haushalt.** Die 0,54 und 1,17 ct/kWh gelten fuer Industriekunden auf Hoechstspannungsebene. Fuer Haushaltskunden fliesst der UeNB-Anteil ueber vorgelagerte Netzebenen in das Gesamtnetzentgelt ein und ist nicht direkt vergleichbar.
+**Grundpreis fehlt.** Die Analyse betrachtet nur den Arbeitspreis. Der Grundpreis (Bundesdurchschnitt 75 EUR/Jahr in 2024, mit Maxima bis 200 EUR) belastet Haushalte mit geringem Verbrauch ueberproportional.
 
-**BNetzA-Festlegung ab 2025.** Im August 2024 hat die BNetzA entschieden, EE-bedingte Verteilnetzkosten ab 2025 bundesweit zu waelzen. Ab 2026 gilt ein Aufschlag fuer besondere Netznutzung von 1,56 ct/kWh. Das ist die direkte regulatorische Antwort auf die Spreizung. Ob sie wirkt, zeigen die naechsten Monitoringberichte.
+**UeNB-Referenzfall ist Industrie, nicht Haushalt.** Die 0,54 und 1,17 ct/kWh gelten fuer Industriekunden auf Hoechstspannungsebene. Fuer Haushaltskunden fliesst der UeNB-Anteil ueber vorgelagerte Netzebenen in das Gesamtnetzentgelt ein.
 
-**Kausalitaet EE-Ausbau.** Die Korrelation zwischen hoher EE-Leistung und hohen Netzentgelten (Brandenburg, Schleswig-Holstein) ist plausibel, aber in dieser Analyse nicht quantifiziert. Siedlungsdichte ist ein Confounder.
+**BNetzA-Festlegung ab 2025.** Im August 2024 hat die BNetzA entschieden, EE-bedingte Verteilnetzkosten bundesweit zu waelzen. Ab 2026 gilt ein Aufschlag von 1,56 ct/kWh. Wirkung in den naechsten Monitoringberichten zu beobachten.
 
-**Paragraph 14a EnWG.** Ab 2024 gelten Netzentgeltrabatte fuer steuerbare Verbrauchseinrichtungen (Waermepumpen, Wallboxen). Das veraendert die Netzentgelt-Landschaft zusaetzlich und ist hier nicht beruecksichtigt.
+**Kausalitaet EE-Ausbau.** Die Korrelation zwischen hoher EE-Leistung und hohen Netzentgelten (Brandenburg, Schleswig-Holstein) ist plausibel, aber nicht quantifiziert. Siedlungsdichte ist ein Confounder.
 
-## Verformelung der Berechnung
+**Paragraph 14a EnWG.** Ab 2024 gelten Netzentgeltrabatte fuer steuerbare Verbrauchseinrichtungen (Waermepumpen, Wallboxen). Das veraendert die Landschaft zusaetzlich und ist hier nicht beruecksichtigt.
+
+---
+
+## Anhang A: Datenbasis und Vorgehen
+
+Die Auswertung stuetzt sich auf 1.116 Datensaetze aus den BNetzA-Monitoringberichten 2015 bis 2025. Zwei Datenstrecken.
+
+Erstens die UeNB-Entgelte 2014-2024: der Arbeitspreis fuer Industriekunden bei 4.500 Volllaststunden auf Hoechstspannungsebene fuer die vier Uebertragungsnetzbetreiber. Das ist der Referenzfall, den die BNetzA in den Monitoringberichten ausweist.
+
+Zweitens die VNB-Haushaltsnetzentgelte 2017-2025: mengengewichtete Mittelwerte des Arbeitspreises fuer Haushaltskunden je Bundesland, ohne Grundpreis und ohne Messstellenbetrieb. Diese Mittelwerte glaetten die VNB-interne Spreizung erheblich.
+
+Keine Ausschluesse, keine Filter. Alle 16 Bundeslaender, alle vier Uebertragungsnetzbetreiber.
+
+Vorgehen in drei Schritten. Erstens UeNB-Zeitreihe 2014-2024: der Sprung 2024 wird sichtbar, die Konvergenz vor der Vereinheitlichung zeigt, dass die regulatorische Angleichung schon vor 2023 lief. Zweitens Bundesland-Ranking 2023: Sortierung nach Hoehe, das Ost-West-Muster wird sichtbar aber nicht deterministisch. Drittens Spreizungsfaktor-Zeitreihe 2017-2025: Zickzack-Muster ohne klaren Trend, der scheinbare Rueckgang 2024 ist Nivellierung nach oben.
+
+Drei Charts illustrieren die Befunde:
+- UeNB-Entgelte 2014-2024 (Zeitreihe Konvergenz und Sprung)
+- VNB-Haushaltsnetzentgelte je Bundesland 2023 (Ranking sortiert)
+- Spreizungsfaktor 2017-2025 (Zickzack)
+
+## Anhang B: Verformelung der Berechnung
 
 ```text
 Spreizungsfaktor (Jahr t) = max(VNB_Haushalt_mean_BL_t) / min(VNB_Haushalt_mean_BL_t)
@@ -110,7 +111,7 @@ wobei:
   BL = {Bremen, Hamburg, Bayern, ..., Brandenburg} (16 Bundeslaender)
   t = 2017, 2018, ..., 2025
 
-UeNB-Veraenderung 2024 = (1,17 - 0,54) / 0,54 * 100 = +116,7% ≈ +117%
+UeNB-Veraenderung 2024 = (1,17 - 0,54) / 0,54 * 100 = +116,7% rd. +117%
 
 wobei:
   0,54 ct/kWh = vereinheitlichtes UeNB-Entgelt 2023 (alle 4 UeNBs identisch)
@@ -131,8 +132,10 @@ Beispiel Brandenburg: (12,45 - 12,45) / 12,45 * 100 = +0,0%
 - BNetzA Monitoringbericht 2024 (Daten fuer 2023)
 - BNetzA Monitoringbericht 2025 (Daten fuer 2024 und 2025)
 - BNetzA Festlegung August 2024 zur Verteilung EE-bedingter Verteilnetzkosten (Paragraph 19 StromNEV)
+- Verbraucherzentrale Bundesverband, Netzentgelt-Vergleich auf Netzbetreiber-Ebene 2024
+
+Vault-interne Verweise:
 - Analyse: [2026-04-30_netzentgelt-explosion-2024](../netzentgelt-explosion-2024/)
-- Hypothese: [2026-04-23_netzentgelt-explosion-2024](../netzentgelt-explosion-2024/)
 - Concept: [nord-sued-gefaelle](../nord-sued-gefaelle/)
 - Chart-Skript: `src/viz/netzentgelte_charts.py`
 - Marimo-Notebook: `notebooks/netzentgelt_explosion.py`
