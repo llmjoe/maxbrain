@@ -27,7 +27,7 @@ Saisonbereinigung ändert daran nichts. Wenn der Vergleich auf den Kalendermonat
 
 Der 1. Mai 2026 war kein Ausreißer, sondern der bisher tiefste Tag eines stetig wachsenden Trends. Day-Ahead-Tagestief um 13 Uhr: -499 EUR/MWh, acht aufeinanderfolgende Stunden negativ. Dieser Wert ist exakt einen Cent über dem regulatorischen Preisfloor der europäischen Strombörsenkopplung, dem HMMCP-Limit von -500 EUR/MWh. Der Markt wollte tiefer, durfte Day-Ahead aber nicht. Intraday, wo dieses Limit nicht gilt, fiel der Preis auf -855 EUR/MWh. Im Jahresvergleich: 2018 hatte rund 140 Negativstunden insgesamt, 2025 waren es 573. Eine Vervierfachung in sieben Jahren.
 
-![Boxplot der Day-Ahead-Spotpreise nach Tagestyp 2018-2026: Werktag 1,47 Prozent, Brueckentag 2,32 Prozent, Wochenende 7,01 Prozent, Feiertag 9,04 Prozent negative Stunden](negativpreise_tagestyp_boxplot.png)
+![Boxplot der Day-Ahead-Spotpreise nach Tagestyp 2018-2026: Werktag 1,47 Prozent, Brückentag 2,32 Prozent, Wochenende 7,01 Prozent, Feiertag 9,04 Prozent negative Stunden](negativpreise_tagestyp_boxplot.png)
 
 ![Heatmap negativer Day-Ahead-Stunden nach Tagestyp und Tageszeit: Mittagskonzentration an arbeitsfreien Tagen](negativpreise_heatmap_stunde.png)
 
@@ -114,7 +114,7 @@ Tagestyp-Funktion `T(D)`:
 ```text
 T(D) = Feiertag,    falls D in Holiday-Vereinigung
      = Wochenende,  falls weekday(D) in {Sa, So} und D nicht in Holiday-Vereinigung
-     = Brueckentag, falls weekday(D) Werktag
+     = Brückentag, falls weekday(D) Werktag
                     und ((D-1 in Holiday) oder (D+1 in Holiday)
                          oder (D-1 in {Sa,So} und D-2 in Holiday)
                          oder (D+1 in {Sa,So} und D+2 in Holiday))
@@ -142,7 +142,7 @@ Beispielrechnung Trend-Vervierfachung:
 ```text
 Negativstunden 2018 (Vollwert, externe Quelle E&M):   140
 Negativstunden 2025 (eigene Auswertung,
-                     extern bestaetigt durch Enoplan): 573
+                     extern bestätigt durch Enoplan): 573
 Faktor 2018 -> 2025:                                 4,09x
 ```
 
@@ -154,14 +154,14 @@ Hinweis: Die eigene Datenbank zeigt für Q4 2018 nur 27 Stunden. Das ist kein Ja
 - python-holidays Library, Version 0.95, https://github.com/vacanza/python-holidays
 - E&M, "Strommarkt: 140 Stunden negative Strompreise in 2018", https://www.energie-und-management.de/nachrichten/detail/140-stunden-negative-strompreise-in-2018-129981
 - Bundesnetzagentur via PV-Magazine, "457 Stunden mit negativen Strompreisen 2024", https://www.pv-magazine.de/2025/01/03/bundesnetzagentur-457-stunden-mit-negativen-strompreisen-insgesamt-weniger-preisspitzen-2024/
-- Enoplan, "Strommarkt 2025: 573 Stunden mit Negativpreisen", https://www.enoplan.de/strommarkt-2025-573-stunden-mit-negativpreisen-flexibilitaet-lohnt-zunehmend/
+- Enoplan, "Strommarkt 2025: 573 Stunden mit Negativpreisen", https://www.enoplan.de/strommarkt-2025-573-stunden-mit-negativpreisen-flexibilität-lohnt-zunehmend/
 - Solarserver, "Strommarkt 2025: Mehr Niedrigpreis- und Hochpreiszeiten", https://www.solarserver.de/2026/01/05/strommarkt-2025-mehr-niedrigpreis-und-hochpreiszeiten/
 - Montel News, "German intraday power plunges to record low EUR -855/MWh", https://montelnews.com/news/fdbb6610-4474-43ca-b30f-7501dbdb4faf/german-intraday-power-plunges-to-record-low-eur-855-mwh
 - ACER, "NEMOs proposal HMMCP SDAC Annex I in track changes", https://www.acer.europa.eu/sites/default/files/documents/Media/News/Documents/NEMOs-amendment-proposal-HMMCP-SDAC-Annex-I-TC-2025.pdf
 - EPEX Spot, "Market Coupling Steering Committee confirms go-live of 15-minute MTU SDAC", https://www.epexspot.com/en/news/market-coupling-steering-committee-confirms-go-live-15-minute-mtu-sdac-trading-day-30
 - Clearingstelle EEG/KWKG, "Zukunft der Vergütung: Negative Strompreise und Direktvermarktung" (BNetzA-Präsentation §51), https://www.clearingstelle-eeg-kwkg.de/sites/default/files/2025-07/0005_BNetzA_Boehm.pdf
-- FfE, "Deutsche Strompreise an der Börse EPEX Spot im Jahr 2023", https://www.ffe.de/veroeffentlichungen/deutsche-strompreise-an-der-boerse-epex-spot-im-jahr-2023/
+- FfE, "Deutsche Strompreise an der Börse EPEX Spot im Jahr 2023", https://www.ffe.de/veröffentlichungen/deutsche-strompreise-an-der-börse-epex-spot-im-jahr-2023/
 - Stromauskunft.de, "Negative Strompreise: Mai-Wochenende zeigt das Strompreis-Paradox", 04.05.2026, https://www.stromauskunft.de/strompreise/negative-strompreise/
 - CLEW Daily, 04.05.2026, "Germany's solar installations drop while new battery storage hits record" (Inbox-Note [2026-05-04_Germanys solar installations drop while new batter](../germanys-solar-installations-drop-while-new-batter/))
-- Eigene Auswertung [2026-05-04_negativpreise-feiertagsystematik](../negativpreise-feiertagsystematik/), Hypothese [2026-05-04_negativpreise-feiertagsystematik-mai-2026](../negativpreise-feiertagsystematik-mai-2026/), Vorlauf [2026-05-01_negativpreise-flexibilitaetsluecke](../negativpreise-flexibilitaetsluecke/), Concept [kosten-der-energiewende](../kosten-der-energiewende/)
+- Eigene Auswertung [2026-05-04_negativpreise-feiertagsystematik](../negativpreise-feiertagsystematik/), Hypothese [2026-05-04_negativpreise-feiertagsystematik-mai-2026](../negativpreise-feiertagsystematik-mai-2026/), Vorlauf [2026-05-01_negativpreise-flexibilitätslücke](../negativpreise-flexibilit-tsl-cke/), Concept [kosten-der-energiewende](../kosten-der-energiewende/)
 - Charts: `Analyses/assets/negativpreise_tagestyp_boxplot.png`, `Analyses/assets/negativpreise_quartal_zeitreihe.png`, `Analyses/assets/negativpreise_heatmap_stunde.png`
