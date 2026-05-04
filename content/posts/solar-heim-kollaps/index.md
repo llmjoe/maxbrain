@@ -39,6 +39,8 @@ Großanlagen leben in einer anderen Logik. Sie verkaufen ihren Strom direkt am M
 
 Was der Mainstream-Frame damit verfehlt: Die gleiche politische Entscheidung wirkt auf die beiden Marktteile asymmetrisch. Bei Eigenheim summieren sich Strompreis-Rückgang und Förderdebatte zu einem doppelten Schlag. Bei Großanlagen läuft das Auktions-System weiter, weil es vor Jahren ausgeschrieben wurde. Das ist kein Zufall, sondern das Ergebnis einer regulatorischen Architektur, in der das eine Segment kontinuierlich und das andere diskretionär gesteuert wird.
 
+![Politische Mechanik trifft asymmetrisch: Eigenheim, Gewerbedach und Großdach mit Förderkürzungs-Debatte fallen zweistellig, Utility mit laufender Auktions-Pipeline wächst plus 21 Prozent](solar_heim_politische_mechanik.png)
+
 ## Wo die eigentliche Diagnose liegt
 
 Drei Mechaniken erklären das Bild zusammen, keiner allein.

@@ -39,6 +39,8 @@ Diese Annahme verschleiert die strukturelle Komponente. Wenn Negativpreise prim�
 
 Die Pointe steckt in der Vorhersagbarkeit. Ein Werktag mit identischer PV-Erzeugung wie der 1. Mai 2026 hätte vermutlich einen einstelligen positiven Mittagspreis produziert. Der 1. Mai produzierte den HMMCP-Floor. Der Unterschied ist nicht Wetter, der Unterschied ist Lastkalender. Das Wetter ist die Verstärkung, der Kalender ist der Auslöser.
 
+![Negativstunden pro Quartal seit Q1 2018: Kalender-Cluster im Frühsommer wiederkehrend, Tendenz steigend, Q1 2026 mit 165 Stunden in nur drei Monaten](negativpreise_quartal_zeitreihe.png)
+
 ## Wo die eigentliche Diagnose liegt
 
 Drei Befunde halten ökonomisch zusammen, und sie verändern die Diagnose der Reform-Debatte.
@@ -46,6 +48,8 @@ Drei Befunde halten ökonomisch zusammen, und sie verändern die Diagnose der Re
 Erstens, die Tagestyp-Hierarchie ist stabil und vorhersagbar. Werktag, Brückentag, Wochenende, Feiertag in dieser Reihenfolge. Kein Tagestyp wechselt zwischen Hochpreis- und Negativpreis-Verhalten je nach Wetter, sondern jeder Tagestyp hat ein eigenes Risiko-Profil. Das ist ein Kalenderkreuz, kein Wetterwürfel.
 
 Zweitens, der HMMCP-Floor von -500 EUR/MWh ist kein abstraktes Detail, sondern wird an extremen Feiertagen tatsächlich getroffen. Der historische Day-Ahead-Rekord stammt vom 2. Juli 2023 mit ebenfalls -500 EUR/MWh. Auch ein Sonntag, auch PV-starke Jahreszeit. Wenn ein regulatorisches Preislimit zur regelmäßigen Untergrenze wird, ist die Engpass-Lage strukturell, nicht episodisch. Der Markt zeigt zweifach an: Day-Ahead durch das Treffen des Limits, Intraday durch das Unterschreiten, sobald das Limit fehlt.
+
+![Stundenverlauf Day-Ahead-Spotpreis am 1. Mai 2026: Tagestief -499 EUR/MWh um 13 Uhr exakt am HMMCP-Floor, Intraday-Tief -855 EUR/MWh ohne Floor-Limit](negativpreise_1mai_stundenverlauf.png)
 
 Drittens, die einzige sichtbare Marktantwort kommt von Großspeichern. Der BSW-Bericht für Q1 2026 nennt einen Speicherzubau von plus 67 Prozent gegenüber dem Vorjahr, getragen vor allem von Großbatterien (Vervierfachung). Solar-Neuanlagen gingen im selben Quartal um sechs Prozent zurück. Die Asymmetrie ist die Antwort: Wer Speicher baut, rechnet nicht mit mittlerem Spread, sondern mit Kalender-Spread. Der Erlös konzentriert sich auf wenige Tage in PV-starken Monaten, nicht gleichmäßig über das Jahr verteilt.
 
