@@ -159,25 +159,40 @@ img, iframe { max-width: 100%; }
   font-size: 18px; line-height: 1.6; color: var(--ink-mid); max-width: 560px;
   text-wrap: pretty;
 }
-.article__body { max-width: var(--reading); }
+/* Article-Body bekommt die volle Content-Spalten-Breite; Text-Elemente werden
+   einzeln auf Lese-Breite (720px) zentriert, Figures duerfen voll breit sein. */
+.article__body { width: 100%; }
+.article__body > h2,
+.article__body > h3,
+.article__body > p,
+.article__body > ul,
+.article__body > ol,
+.article__body > blockquote,
+.article__body > table,
+.article__body > pre,
+.article__body > .highlight {
+  max-width: var(--reading);
+  margin-left: auto;
+  margin-right: auto;
+}
 .article__body h2 {
   font-family: var(--serif); font-weight: 400;
   font-size: clamp(20px, 2.5vw, 28px); line-height: 1.2;
-  margin: 64px 0 20px; padding-bottom: 14px;
+  margin: 64px auto 20px; padding-bottom: 14px;
   border-bottom: 1px solid var(--rule);
   scroll-margin-top: calc(var(--header-h) + 24px);
 }
 .article__body h3 {
   font-family: var(--serif); font-weight: 400;
   font-size: clamp(17px, 2vw, 22px); line-height: 1.25;
-  margin: 36px 0 14px;
+  margin: 36px auto 14px;
   scroll-margin-top: calc(var(--header-h) + 24px);
 }
 .article__body p {
   font-family: var(--sans); font-size: 16px; line-height: 1.85;
   color: var(--ink); margin-bottom: 20px; text-wrap: pretty;
 }
-.article__body ul, .article__body ol { margin: 0 0 20px 1.4em; line-height: 1.8; }
+.article__body ul, .article__body ol { margin: 0 auto 20px; padding-left: 1.4em; line-height: 1.8; }
 .article__body li { margin-bottom: 6px; }
 .article__body strong { font-weight: 600; }
 .article__body em { font-style: italic; }
@@ -206,23 +221,23 @@ img, iframe { max-width: 100%; }
   border-bottom: 1px solid var(--rule);
 }
 .article__body th { font-weight: 600; color: var(--ink-mid); }
-/* Bilder direkt im Body (Markdown-img ohne figure-Wrapper) bekommen einen
-   leichten Rahmen plus etwas Innen-Abstand, damit sie nicht direkt am Text kleben. */
-.article__body p > img,
-.article__body > img {
+/* Charts/Figures spannen die volle Content-Spalte (breiter als die Lese-Breite). */
+.article__body p:has(> img) {
+  max-width: none; width: 100%; margin: 36px 0;
+}
+.article__body p > img {
   display: block; width: 100%; height: auto;
   background: var(--bg-subtle);
   border: 1px solid var(--rule); border-radius: 8px;
-  padding: 12px;
-  margin: 36px 0;
+  padding: 16px;
   scroll-margin-top: calc(var(--header-h) + 16px);
 }
-.article__body p:has(> img) { margin: 0; }
 .article__body figure {
   margin: 36px 0;
+  width: 100%; max-width: none;
   background: var(--bg-subtle);
   border: 1px solid var(--rule); border-radius: 8px;
-  padding: 12px;
+  padding: 16px;
   scroll-margin-top: calc(var(--header-h) + 16px);
 }
 .article__body figure img {
@@ -242,7 +257,7 @@ img, iframe { max-width: 100%; }
 .article__foot {
   display: flex; justify-content: space-between; align-items: center;
   border-top: 1px solid var(--rule); padding-top: 32px;
-  margin-top: 56px; max-width: var(--reading);
+  margin: 56px auto 0; max-width: var(--reading);
 }
 
 /* ── Article TOC sidebar ─────────────────────────────────────────────────── */
