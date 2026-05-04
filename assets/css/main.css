@@ -221,25 +221,28 @@ img, iframe { max-width: 100%; }
   border-bottom: 1px solid var(--rule);
 }
 .article__body th { font-weight: 600; color: var(--ink-mid); }
-/* Charts/Figures spannen die volle Content-Spalte (breiter als die Lese-Breite). */
+/* Charts/Figures: kompakter als die Lese-Breite und mittig zentriert. */
 .article__body p:has(> img) {
-  max-width: none; width: 100%; margin: 36px 0;
+  max-width: 600px; width: 100%;
+  margin: 36px auto;
 }
 .article__body p > img {
   display: block; width: 100%; height: auto;
   background: var(--bg-subtle);
   border: 1px solid var(--rule); border-radius: 8px;
-  padding: 16px;
+  padding: 14px;
   scroll-margin-top: calc(var(--header-h) + 16px);
 }
 .article__body figure {
-  margin: 36px 0;
-  width: 100%; max-width: none;
+  margin: 36px auto;
+  width: 100%; max-width: 600px;
   background: var(--bg-subtle);
   border: 1px solid var(--rule); border-radius: 8px;
-  padding: 16px;
+  padding: 14px;
   scroll-margin-top: calc(var(--header-h) + 16px);
 }
+/* Interaktive Karte darf etwas breiter, weil mit Slider/Hover mehr Platz braucht. */
+.article__body figure.interactive-map { max-width: 720px; }
 .article__body figure img {
   display: block; width: 100%; height: auto;
   border-radius: 4px; border: 0; padding: 0; margin: 0;
