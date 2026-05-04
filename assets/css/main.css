@@ -46,9 +46,9 @@ img, iframe { max-width: 100%; }
 /* ── Site header ─────────────────────────────────────────────────────────── */
 .site-header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: saturate(140%) blur(10px);
+  background: #fff;
   border-bottom: 1px solid var(--rule);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 .site-header__inner {
   max-width: var(--container); margin: 0 auto;
@@ -206,20 +206,38 @@ img, iframe { max-width: 100%; }
   border-bottom: 1px solid var(--rule);
 }
 .article__body th { font-weight: 600; color: var(--ink-mid); }
-.article__body img {
+/* Bilder direkt im Body (Markdown-img ohne figure-Wrapper) bekommen einen
+   leichten Rahmen plus etwas Innen-Abstand, damit sie nicht direkt am Text kleben. */
+.article__body p > img,
+.article__body > img {
   display: block; width: 100%; height: auto;
+  background: var(--bg-subtle);
   border: 1px solid var(--rule); border-radius: 8px;
-  margin: 24px 0;
+  padding: 12px;
+  margin: 36px 0;
+  scroll-margin-top: calc(var(--header-h) + 16px);
 }
-.article__body figure { margin: 28px 0; }
+.article__body p:has(> img) { margin: 0; }
+.article__body figure {
+  margin: 36px 0;
+  background: var(--bg-subtle);
+  border: 1px solid var(--rule); border-radius: 8px;
+  padding: 12px;
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+.article__body figure img {
+  display: block; width: 100%; height: auto;
+  border-radius: 4px; border: 0; padding: 0; margin: 0;
+}
 .article__body figure.interactive-map iframe {
   display: block; width: 100%;
-  border: 1px solid var(--rule); border-radius: 8px;
-  background: var(--bg-subtle);
+  border-radius: 4px;
+  background: #fff;
 }
 .article__body figure figcaption {
   font-size: 12px; color: var(--ink-faint);
-  margin-top: 8px; line-height: 1.5;
+  margin-top: 10px; line-height: 1.5;
+  padding: 0 4px;
 }
 .article__foot {
   display: flex; justify-content: space-between; align-items: center;
