@@ -8,7 +8,7 @@ subtitle: Heim-Speicher folgt Heim-PV nach unten. Großbatterien wachsen alleine
 tag: speicher
 tags:
 - speicher
-read_time: 15 Min.
+read_time: 16 Min.
 linkedin_post: 2026-05-04_speicher-pv-relation-q1-2026
 analyses:
 - 2026-05-04_speicher-pv-relation-q1-2026
@@ -53,7 +53,9 @@ Die Reform-Diagnose ist nicht "Speicher hat PV überholt", auch nicht "Markt bau
 
 ![Anteil neuer Heim-PV-Anlagen mit MaStR-verknüpftem Speicher pro Quartal: von 9,5 Prozent in Q1 2024 auf 55 Prozent in Q1 2026, fast vervierfacht in zwei Jahren.](pv_speicher_quote_quartal.png)
 
-**Großbatterie-Welt-Diagnose**: Wer die Großbatterien strukturell sichtbar machen will, muss am StromVKG-Auktionsdesign drehen. Die 10-Stunden-Regel im Referentenentwurf vom April 2026 sortiert genau die Asset-Klasse aus, die in den Stammdaten gerade die stärkste Wachstumskurve fährt. Eine Auktion, in der nur Gaskraftwerke und überbaute Pumpspeicher antreten können, ist eine Auktion, die das Marktgeschehen ausblendet. Diese Diagnose ist nicht durch Böswilligkeit entstanden, die 10-Stunden-Regel kommt aus der klassischen Versorgungssicherheitsrechnung mit Gaskraftwerken als Referenzanlage. Sie blendet nur Batteriespeicher aus, weil deren typisches Energie-zu-Leistung-Verhältnis bei 2 bis 4 Stunden liegt. Die direkte MaStR-Auswertung über die Tabelle `mastr_storage_units` bestätigt das: Großbatterien Q1 2026 haben im Median ein E/P-Verhältnis von rund 2 Stunden, Heim-Speicher rund 1,8 Stunden. Beide Klassen liegen klar unterhalb der 10-Stunden-Schwelle.
+**Großbatterie-Welt-Diagnose**: Wer die Großbatterien strukturell sichtbar machen will, muss am StromVKG-Auktionsdesign drehen. Die 10-Stunden-Regel im Referentenentwurf vom April 2026 sortiert genau die Asset-Klasse aus, die in den Stammdaten gerade die stärkste Wachstumskurve fährt. Eine Auktion, in der nur Gaskraftwerke und überbaute Pumpspeicher antreten können, ist eine Auktion, die das Marktgeschehen ausblendet. Diese Diagnose ist nicht durch Böswilligkeit entstanden, die 10-Stunden-Regel kommt aus der klassischen Versorgungssicherheitsrechnung mit Gaskraftwerken als Referenzanlage. Sie blendet nur Batteriespeicher aus, weil deren typisches Energie-zu-Leistung-Verhältnis bei 2 bis 4 Stunden liegt. Die direkte MaStR-Auswertung über die Tabelle `mastr_storage_units` bestätigt das: Großbatterien Q1 2026 haben im Median ein E/P-Verhältnis von rund 2 Stunden, Heim-Speicher rund 1,8 Stunden. Kein einziger Speicher ab einem Megawatt erreicht in den deutschen Stammdaten die 10-Stunden-Schwelle.
+
+![Histogram Energie-zu-Leistung-Verhältnis aller Speicher ab 1 MW: Verteilung konzentriert auf 1 bis 4 Stunden, kein einziger Eintrag jenseits der StromVKG-Schwelle von 10 Stunden](speicher_grossbatterie_ep_histogram.png)
 
 Die saubere Reform-Antwort ist nicht "Bedingungen lockern". Sie ist "Auktion segmentieren". Eine separate Spalte für Kurzzeitflexibilität, mit einer 2 bis 4-Stunden-Schwelle, mit eigener Mengenrechnung. Die Niederlande, Italien und Großbritannien fahren ihre Capacity-Market-Tender mit segmentierten Kategorien. Deutschland fährt eine pauschale Schwelle und produziert eine Verzerrung, die in den Stammdaten bereits ablesbar ist.
 

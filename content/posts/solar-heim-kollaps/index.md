@@ -4,7 +4,7 @@ date: '2026-05-04'
 slug: solar-heim-kollaps
 draft: false
 subtitle: Drei Mechaniken erklären das Bild zusammen, keiner allein.
-read_time: 12 Min.
+read_time: 13 Min.
 linkedin_post: 2026-05-04_solar-heim-kollaps
 analyses:
 - 2026-05-04_solar-heim-kollaps-q1-2026
@@ -24,6 +24,10 @@ Die eigene Auswertung der amtlichen Anlagenregistrierungen über 25 Quartale ab 
 Was wirklich kippt, ist nicht das Niveau, sondern die Mischung. Im Q1 2020 stammten 20 Prozent der quartalsweise neu installierten Solarleistung aus dem Eigenheim-Segment. Im Q1 2026 sind es noch 9 Prozent. Der Anteil der Großanlagen über 500 Kilowatt ist im selben Zeitraum von 38 auf 63 Prozent gestiegen. Der Bürger-Anteil hat sich halbiert, der institutionelle Anteil ist zur dominanten Säule geworden.
 
 Das ist kein Quartalsausreißer. Die Verschiebung läuft seit Mitte 2024 trendmäßig, beschleunigt sich in Q1 2026 und passt zur amtlichen Beobachtung der Bundesnetzagentur, dass das Verhältnis zwischen Gebäude- und Freiflächen-Installationen schon im Gesamtjahr 2025 von etwa zwei zu eins auf rund 50 zu 50 gekippt ist.
+
+Sie verläuft auch regional auseinander. Wo Eigenheim-Anlagen den Markt bestimmen, fällt der Q1-Zubau zweistellig: Sachsen minus 65 Prozent, Bayern minus 43 Prozent, Niedersachsen minus 41 Prozent. Wo Freiflächen-Auktionen abgewickelt werden, wächst er ähnlich stark: Brandenburg plus 123 Prozent, Saarland plus 95 Prozent, Thüringen plus 74 Prozent. Dieselbe politische Lage trifft die Bundesländer diametral, weil sie unterschiedliche Marktstrukturen haben.
+
+![Solar-Q1-Wachstum nach Bundesland Q1 2025 zu Q1 2026: Sachsen, Bayern, Niedersachsen mit zweistelligen Rückgängen, Brandenburg und Saarland mit zweistelligem Wachstum](solar_bundeslaender_yoy.png)
 
 ![Rolling 4Q YoY-Wachstumsrate Solar-Zubau Q1 2026: Residential, Commercial und Large Roof negativ, Utility positiv](solar_heim_kollaps_yoy_rolling.png)
 

@@ -17,7 +17,9 @@ hypothesis: 2026-05-04_negativpreise-feiertagsystematik-mai-2026
 
 ## Auslöser
 
-Am 4. Mai 2026 zitiert der CLEW Daily eine Montel-Meldung mit einem Intraday-Tief von -855 EUR/MWh am 1. Mai 2026, dem ersten Maifeiertag. Stromauskunft.de bringt am gleichen Tag einen Mai-Wochenend-Bericht mit dem Titel "Strompreis-Paradox". Beide landen kurz nacheinander in der Inbox, beide framen den Tag als Wetter-Ereignis: viel Sonne, wenig Last, Markt versagt. Das ist die übliche Lesart. Sie übersieht, dass der 1. Mai nicht zufällig auf einen Freitag fiel, sondern als europaweiter Feiertag jedes Jahr Pflichttermin im Negativ-Preis-Kalender ist. Diese Beobachtung war der Anlass, acht Jahre Day-Ahead-Daten nach Tagestyp zu sortieren.
+Am 4. Mai 2026 zitiert der CLEW Daily eine Montel-Meldung mit einem Intraday-Tief von -855 EUR/MWh am 1. Mai 2026, dem ersten Maifeiertag. Stromauskunft.de bringt am gleichen Tag einen Mai-Wochenend-Bericht mit dem Titel "Strompreis-Paradox". Beide landen kurz nacheinander in der Inbox, beide framen den Tag als Wetter-Ereignis: viel Sonne, wenig Last, Markt versagt. Das ist die übliche Lesart. Sie übersieht, dass der 1. Mai nicht zufällig auf einen Freitag fiel, sondern als europaweiter Feiertag jedes Jahr Pflichttermin im Negativ-Preis-Kalender ist. Der Trichter-Effekt ist im Vier-Jahres-Vergleich deutlich sichtbar: 2023 lag der Mittagspreis am 1. Mai noch bei rund 90 EUR/MWh, 2024 bei null, 2025 bei minus 100, 2026 bei minus 499. Diese Beobachtung war der Anlass, acht Jahre Day-Ahead-Daten nach Tagestyp zu sortieren.
+
+![Day-Ahead-Stundenpreis am 1. Mai 2023 bis 2026 als Overlay: Mittagskurve sinkt jedes Jahr tiefer, 2026 erstmals am HMMCP-Floor](negativpreise_1mai_jahresvergleich.png)
 
 ## Hauptbefund
 
