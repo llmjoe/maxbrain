@@ -14,6 +14,7 @@ analyses:
 - 2026-05-03_vnb-dne-readiness-precheck
 - 2026-05-03_vnb-dne-readiness-plausibilisierung
 hypothesis: 2026-05-03_dne-vnb-implementierungsluecke
+cover: vnb_dne_readiness_buckets.png
 ---
 
 ## Auslöser

@@ -8,11 +8,12 @@ subtitle: Warum negative Day-Ahead-Stunden dem Kalender folgen und das Wetter si
 tag: strommarkt
 tags:
 - strommarkt
-read_time: 12 Min.
+read_time: 13 Min.
 linkedin_post: 2026-05-04_negativpreise-feiertagsystematik
 analyses:
 - 2026-05-04_negativpreise-feiertagsystematik
 hypothesis: 2026-05-04_negativpreise-feiertagsystematik-mai-2026
+cover: negativpreise_1mai_jahresvergleich.png
 ---
 
 ## Auslöser
@@ -57,7 +58,9 @@ Drittens, die einzige sichtbare Marktantwort kommt von Großspeichern. Der BSW-B
 
 Diese drei Punkte zusammen verschieben die wirtschaftliche Lesart. Speicher-Wirtschaftlichkeitsrechnungen mit Mittelwert-Spreads unterschätzen das Erlöspotenzial systematisch, weil sie die Konzentration auf Feiertags-Cluster nicht abbilden. Umgekehrt überschätzen sie die Zuverlässigkeit, weil ein milder Mai ohne Pfingsten plus 1. Mai am Wochenende den Erlös für ein halbes Jahr verschiebt. Die richtige Modellierung ist Kalender-Risikomanagement, nicht stochastische Verteilung.
 
-Politisch folgt daraus, dass die seit dem 25. Februar 2025 geltende verschärfte §51-EEG-Regelung, die Neuanlagen bereits bei der ersten negativen Viertelstunde aus der Förderung nimmt, an einer kalendarischen Realität ansetzt, nicht an einer zufälligen. Die Zahl der betroffenen Stunden ist planbar, nicht nur saisonal. Wer eine PV-Anlage 2026 baut, kann sich aus dem Kalender für die nächsten zehn Jahre ausrechnen, an wie vielen Stunden er voraussichtlich Förderung verliert.
+Politisch folgt daraus, dass die seit dem 25. Februar 2025 geltende verschärfte §51-EEG-Regelung, die Neuanlagen bereits bei der ersten negativen Viertelstunde aus der Förderung nimmt, an einer kalendarischen Realität ansetzt, nicht an einer zufälligen. Die Zahl der betroffenen Stunden ist planbar, nicht nur saisonal. Wer eine PV-Anlage 2026 baut, kann sich aus dem Kalender für die nächsten zehn Jahre ausrechnen, an wie vielen Stunden er voraussichtlich Förderung verliert. Der April 2026 zeigt das Cluster-Muster bereits in voller Schärfe: an mehr als der Hälfte der Tage gab es negative Stunden, am 26. April erreichte der Preis -414 EUR/MWh, am 1. Mai -499 EUR/MWh. Das sind nicht 30 unabhängige Wetter-Episoden, sondern eine sich wiederholende Kalender-Verteilung.
+
+![Heatmap-Kalender Tage mit negativen Day-Ahead-Stunden April 2025 bis Mai 2026: Cluster auf Frühling-Monate, intensiv im April 2026](negativpreise_kalender_heatmap.png)
 
 ## Internationaler Vergleich
 

@@ -13,6 +13,7 @@ linkedin_post: 2026-05-04_speicher-pv-relation-q1-2026
 analyses:
 - 2026-05-04_speicher-pv-relation-q1-2026
 hypothesis: 2026-05-04_speicher-überholt-erzeugung-q1-2026
+cover: grossbatterie_bestand_kumuliert.png
 ---
 
 ## Auslöser
@@ -26,6 +27,8 @@ Der deutsche Speichermarkt zerfällt in zwei Welten, und sie folgen unterschiedl
 **Welt 1, Heim-Speicher: Bündel-Markt mit der PV gekoppelt.** Q1 2026 wurden 86.000 neue Heim-Speicher unter 30 Kilowatt registriert, davon 79 Prozent gleichzeitig mit einer PV-Anlage. Die Bundle-Quote, also der Anteil neuer Heim-PV-Anlagen mit gleichzeitig registriertem MaStR-verknüpftem Speicher, ist innerhalb von zwei Jahren von 9,5 Prozent (Q1 2024) auf 55 Prozent (Q1 2026) gesprungen. Heim-PV ohne Speicher ist 2026 die Minderheit geworden. Wenn Heim-PV einbricht, bricht Heim-Speicher mechanisch mit. Die Zahlen: Heim-Speicher Q1 2025 zu Q1 2026 minus 11 Prozent. Heim-PV im gleichen Vergleich minus 29 Prozent. Beide Reihen zeigen nach unten, der Speicher fällt nur weniger steil, weil ein wachsendes Stand-Alone-Segment einen Teil der PV-Bremse abfängt.
 
 **Welt 2, Großbatterie: Stand-Alone-Markt mit eigener Wachstumskurve.** 183 Anlagen ab 10 Megawatt halten 43 Prozent der gesamten installierten Speicher-Leistung, obwohl sie nur 0,008 Prozent aller Anlagen sind. Davon hat keine einzige eine PV-Verknüpfung in MaStR. Q1 2020 bis Q1 2022 lag der Großbatterie-Quartalszubau bei null bis 80 MW. Seit Q4 2022 zieht er an, Q1 2025 bei 254 MW, Q1 2026 bei 347 MW. Auf der Energie-Achse ist die Beschleunigung noch deutlicher: Großbatterie-Quartalszubau Q1 2025 mit 0,43 GWh, Q1 2026 mit 0,76 GWh, also plus 77 Prozent gegenüber Vorjahr. Diese Welle hat mit dem Heim-Markt nichts zu tun. Sie wird von Spread-Erlösen, Frequenzregelung und perspektivisch Capacity-Market-Tender getrieben.
+
+![Kumulierter Bestand der Großbatterien ab 10 MW seit Q1 2020: Wendepunkt Q4 2022 mit einem Quartalszubau von 323 MW, danach kontinuierliche Beschleunigung auf 1.741 MW kumuliert in Q1 2026](grossbatterie_bestand_kumuliert.png)
 
 ![Heim-Speicher GWh sinkt von 1,09 auf 0,98, Großbatterie-GWh wächst von 0,43 auf 0,76 zwischen Q1 2025 und Q1 2026. Die Spaltung ist auf der Energie-Achse noch schärfer als auf der Leistungs-Achse.](speicher_gwh_heim_vs_gross.png)
 

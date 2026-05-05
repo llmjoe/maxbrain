@@ -9,6 +9,7 @@ linkedin_post: 2026-05-04_solar-heim-kollaps
 analyses:
 - 2026-05-04_solar-heim-kollaps-q1-2026
 hypothesis: 2026-05-04_solar-heim-kollaps-vs-grossanlagen-2026
+cover: solar_bundeslaender_yoy.png
 ---
 
 ## Auslöser
@@ -39,7 +40,9 @@ Die öffentliche Erzählung zur Förderkürzung ist eine Strompreis-Geschichte. 
 
 Die Eigenheim-Wirtschaftlichkeit hängt nicht an der Industrie-Strompreis-Logik. Sie hängt am Eigenverbrauch und an der Differenz zwischen vermiedenen Bezugskosten und Investitionsamortisation. Wenn der Haushaltsstrompreis sinkt, wie ihn der BDEW im April 2026 mit 37,0 Cent je Kilowattstunde gegenüber den höheren Vorjahreswerten beschreibt, schwächt das den Eigenverbrauchs-Case. Wenn parallel die Einspeisevergütung politisch in Frage gestellt wird, schwächt das die Restvergütung des nicht selbst genutzten Stroms. Beide Effekte wirken auf das gleiche Segment.
 
-Großanlagen leben in einer anderen Logik. Sie verkaufen ihren Strom direkt am Markt, oft abgesichert über langfristige Stromabnahmeverträge oder über Ausschreibungs-Zuschläge der Bundesnetzagentur. Für 2026 hat die Bundesnetzagentur Solar-Freiflächen-Ausschreibungen mit einem Volumen von 9.900 Megawatt angesetzt. Das ist planmäßiger Zubau, der weitgehend unabhängig von der Einspeisevergütung für Kleine läuft. Das Wachstum bei Großanlagen ist damit zum Teil schlicht das Abarbeiten dieser Auktions-Pipeline und kein direkter Reflex auf Förderkürzungen im Kleinanlagen-Segment.
+Großanlagen leben in einer anderen Logik. Sie verkaufen ihren Strom direkt am Markt, oft abgesichert über langfristige Stromabnahmeverträge oder über Ausschreibungs-Zuschläge der Bundesnetzagentur. Für 2026 hat die Bundesnetzagentur Solar-Freiflächen-Ausschreibungen mit einem Volumen von 9.900 Megawatt angesetzt. Das ist planmäßiger Zubau, der weitgehend unabhängig von der Einspeisevergütung für Kleine läuft. Das Wachstum bei Großanlagen ist damit zum Teil schlicht das Abarbeiten dieser Auktions-Pipeline und kein direkter Reflex auf Förderkürzungen im Kleinanlagen-Segment. Die Skala der Pipeline überragt das Eigenheim-Segment um Faktor fünf, das ist im Gesamtjahr 2025 schon ablesbar.
+
+![Solar-Zubau 2025 nach Klasse: Eigenheim 1,95 GW, Gewerbedach 4,5 GW, Großdach 1,1 GW, Utility 9,6 GW. Plus Annotation BNetzA-Auktions-Pipeline 2026 mit 9,9 GW vorab vergeben.](solar_skala_2025_klassen.png)
 
 Was der Mainstream-Frame damit verfehlt: Die gleiche politische Entscheidung wirkt auf die beiden Marktteile asymmetrisch. Bei Eigenheim summieren sich Strompreis-Rückgang und Förderdebatte zu einem doppelten Schlag. Bei Großanlagen läuft das Auktions-System weiter, weil es vor Jahren ausgeschrieben wurde. Das ist kein Zufall, sondern das Ergebnis einer regulatorischen Architektur, in der das eine Segment kontinuierlich und das andere diskretionär gesteuert wird.
 
