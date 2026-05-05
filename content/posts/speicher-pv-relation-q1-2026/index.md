@@ -8,7 +8,7 @@ subtitle: Heim-Speicher folgt Heim-PV nach unten. Großbatterien wachsen alleine
 tag: speicher
 tags:
 - speicher
-read_time: 13 Min.
+read_time: 15 Min.
 linkedin_post: 2026-05-04_speicher-pv-relation-q1-2026
 analyses:
 - 2026-05-04_speicher-pv-relation-q1-2026
@@ -25,9 +25,11 @@ Der deutsche Speichermarkt zerfällt in zwei Welten, und sie folgen unterschiedl
 
 **Welt 1, Heim-Speicher: Bündel-Markt mit der PV gekoppelt.** Q1 2026 wurden 86.000 neue Heim-Speicher unter 30 Kilowatt registriert, davon 79 Prozent gleichzeitig mit einer PV-Anlage. Die Bundle-Quote, also der Anteil neuer Heim-PV-Anlagen mit gleichzeitig registriertem MaStR-verknüpftem Speicher, ist innerhalb von zwei Jahren von 9,5 Prozent (Q1 2024) auf 55 Prozent (Q1 2026) gesprungen. Heim-PV ohne Speicher ist 2026 die Minderheit geworden. Wenn Heim-PV einbricht, bricht Heim-Speicher mechanisch mit. Die Zahlen: Heim-Speicher Q1 2025 zu Q1 2026 minus 11 Prozent. Heim-PV im gleichen Vergleich minus 29 Prozent. Beide Reihen zeigen nach unten, der Speicher fällt nur weniger steil, weil ein wachsendes Stand-Alone-Segment einen Teil der PV-Bremse abfängt.
 
-**Welt 2, Großbatterie: Stand-Alone-Markt mit eigener Wachstumskurve.** 183 Anlagen ab 10 Megawatt halten 43 Prozent der gesamten installierten Speicher-Leistung, obwohl sie nur 0,008 Prozent aller Anlagen sind. Davon hat keine einzige eine PV-Verknüpfung in MaStR. Q1 2020 bis Q1 2022 lag der Großbatterie-Quartalszubau bei null bis 80 MW. Seit Q4 2022 zieht er an, Q1 2025 bei 254 MW, Q1 2026 bei 347 MW. Diese Welle hat mit dem Heim-Markt nichts zu tun. Sie wird von Spread-Erlösen, Frequenzregelung und perspektivisch Capacity-Market-Tender getrieben.
+**Welt 2, Großbatterie: Stand-Alone-Markt mit eigener Wachstumskurve.** 183 Anlagen ab 10 Megawatt halten 43 Prozent der gesamten installierten Speicher-Leistung, obwohl sie nur 0,008 Prozent aller Anlagen sind. Davon hat keine einzige eine PV-Verknüpfung in MaStR. Q1 2020 bis Q1 2022 lag der Großbatterie-Quartalszubau bei null bis 80 MW. Seit Q4 2022 zieht er an, Q1 2025 bei 254 MW, Q1 2026 bei 347 MW. Auf der Energie-Achse ist die Beschleunigung noch deutlicher: Großbatterie-Quartalszubau Q1 2025 mit 0,43 GWh, Q1 2026 mit 0,76 GWh, also plus 77 Prozent gegenüber Vorjahr. Diese Welle hat mit dem Heim-Markt nichts zu tun. Sie wird von Spread-Erlösen, Frequenzregelung und perspektivisch Capacity-Market-Tender getrieben.
 
-Die ursprüngliche BSW-Schlagzeile "Speicher plus 67 Prozent" stimmt rechnerisch, aber sie ist GWh-zentriert und wird ganz überwiegend von der Großbatterie-Welle gespeist. Auf Anlagen-Ebene und auf der Heim-Klasse sieht das Bild umgekehrt aus.
+![Heim-Speicher GWh sinkt von 1,09 auf 0,98, Großbatterie-GWh wächst von 0,43 auf 0,76 zwischen Q1 2025 und Q1 2026. Die Spaltung ist auf der Energie-Achse noch schärfer als auf der Leistungs-Achse.](speicher_gwh_heim_vs_gross.png)
+
+Die BSW-Schlagzeile "Speicher plus 67 Prozent" lässt sich gegen den MaStR-Cut prüfen. Eigene Aggregation Q1 2026 ergibt 2,08 GWh Quartalszubau gegen Q1 2025 mit 1,61 GWh, also plus 29 Prozent über alle Klassen. Der Unterschied zur Branchenmeldung erklärt sich durch eine andere Berechnungsbasis (BSW vergleicht teilweise Bestandsänderung statt Quartalszubau und nutzt einen späteren Datenstand). Ende 2025 liegt der Bestand bei 24 bis 25 GWh, das deckt sich mit den 24 GWh, die ess-news.com auf Basis von BSW-Solar berichtet. Auf Klassen-Ebene zeigt sich die Bewegung trotzdem klar: Heim-Speicher GWh fällt minus 11 Prozent YoY, Großbatterie-GWh wächst plus 77 Prozent.
 
 ![Drei Linien auf gemeinsamer Zeitachse: Heim-PV und Heim-Speicher fallen Q1 2026 parallel, Großbatterie ab 10 MW wächst eigenständig](zwei_welten_speicher_pv.png)
 
@@ -51,7 +53,7 @@ Die Reform-Diagnose ist nicht "Speicher hat PV überholt", auch nicht "Markt bau
 
 ![Anteil neuer Heim-PV-Anlagen mit MaStR-verknüpftem Speicher pro Quartal: von 9,5 Prozent in Q1 2024 auf 55 Prozent in Q1 2026, fast vervierfacht in zwei Jahren.](pv_speicher_quote_quartal.png)
 
-**Großbatterie-Welt-Diagnose**: Wer die Großbatterien strukturell sichtbar machen will, muss am StromVKG-Auktionsdesign drehen. Die 10-Stunden-Regel im Referentenentwurf vom April 2026 sortiert genau die Asset-Klasse aus, die in den Stammdaten gerade die stärkste Wachstumskurve fährt. Eine Auktion, in der nur Gaskraftwerke und überbaute Pumpspeicher antreten können, ist eine Auktion, die das Marktgeschehen ausblendet. Diese Diagnose ist nicht durch Böswilligkeit entstanden, die 10-Stunden-Regel kommt aus der klassischen Versorgungssicherheitsrechnung mit Gaskraftwerken als Referenzanlage. Sie blendet nur Batteriespeicher aus, weil deren typisches Energie-zu-Leistung-Verhältnis nach RWTH-Auswertung des bereinigten MaStR-Bestands bei 2 bis 4 Stunden liegt. Die MaStR-Rohdaten selbst sind in der Spalte `NutzbareSpeicherkapazitaet` zu 100 Prozent leer, der Befund stützt sich auf die Branchen-Bereinigung von battery-charts.de.
+**Großbatterie-Welt-Diagnose**: Wer die Großbatterien strukturell sichtbar machen will, muss am StromVKG-Auktionsdesign drehen. Die 10-Stunden-Regel im Referentenentwurf vom April 2026 sortiert genau die Asset-Klasse aus, die in den Stammdaten gerade die stärkste Wachstumskurve fährt. Eine Auktion, in der nur Gaskraftwerke und überbaute Pumpspeicher antreten können, ist eine Auktion, die das Marktgeschehen ausblendet. Diese Diagnose ist nicht durch Böswilligkeit entstanden, die 10-Stunden-Regel kommt aus der klassischen Versorgungssicherheitsrechnung mit Gaskraftwerken als Referenzanlage. Sie blendet nur Batteriespeicher aus, weil deren typisches Energie-zu-Leistung-Verhältnis bei 2 bis 4 Stunden liegt. Die direkte MaStR-Auswertung über die Tabelle `mastr_storage_units` bestätigt das: Großbatterien Q1 2026 haben im Median ein E/P-Verhältnis von rund 2 Stunden, Heim-Speicher rund 1,8 Stunden. Beide Klassen liegen klar unterhalb der 10-Stunden-Schwelle.
 
 Die saubere Reform-Antwort ist nicht "Bedingungen lockern". Sie ist "Auktion segmentieren". Eine separate Spalte für Kurzzeitflexibilität, mit einer 2 bis 4-Stunden-Schwelle, mit eigener Mengenrechnung. Die Niederlande, Italien und Großbritannien fahren ihre Capacity-Market-Tender mit segmentierten Kategorien. Deutschland fährt eine pauschale Schwelle und produziert eine Verzerrung, die in den Stammdaten bereits ablesbar ist.
 
@@ -81,7 +83,7 @@ Relativiert: Die Schlagzeile "380 MW Speicher pro GW PV". Rechnerisch korrekt, n
 
 Drei Punkte schwächen den Befund, ohne ihn zu kippen.
 
-Erstens, die GWh-Achse. Die MaStR-Spalte `NutzbareSpeicherkapazitaet` ist im aktuellen Auszug zu 100 Prozent leer, mehr als 2,4 Millionen Anlagen ohne einen einzigen befüllten Wert. Eine direkte GWh-Aggregation ist damit aus dem MaStR-Auszug nicht möglich. RWTH Aachen (battery-charts.de) und Fraunhofer ISE arbeiten mit aufgewerteten Datensätzen, in denen die Energie-zu-Leistung-Verhältnisse über Branchen-Klassifikationen und Hersteller-Daten ergänzt werden. Diese Bereinigung war hier nicht reproduzierbar, der Befund beschränkt sich auf die GW-Achse. Bei steigenden Energie-zu-Leistung-Verhältnissen, also länger werdenden Speichern, entsteht eine Lücke, die der GW-Vergleich nicht sieht.
+Erstens, die Datenbasis-Frage. Die GWh-Achse stand zunächst unter Vorbehalt, weil die Spalte `NutzbareSpeicherkapazitaet` in der Tabelle `mastr_storage_extended` komplett leer ist. Eine zweite Datensichtung hat ergeben, dass die Werte in einer Schwester-Tabelle `mastr_storage_units` stehen und dort zu 99,997 Prozent gefüllt sind. Über das Feld `VerknuepfteEinheit` lassen sich beide Tabellen verbinden, die GWh-Aggregation wird damit direkt aus den Rohdaten möglich. Die Methodik folgt dem battery-charts.de-Cut von RWTH Aachen: Filter auf Speicherkapazität größer 0,3 kWh, Leistung größer 0,3 kW, definierte Batterietechnologie, gültiges Inbetriebnahmedatum. Das schließt Pumpspeicher und Wasserstoff-Speicher aus, die mit ungewöhnlichen E/P-Verhältnissen das Bild verzerren würden. Plausibilisierung gegen externe Branchen-Daten: Bestand Ende 2025 ergibt 24 bis 25 GWh, was sich mit der ess-news.com-Meldung auf Basis von BSW-Solar (24 GWh) deckt. Q1 2026 Quartalszubau 2,08 GWh deckt sich mit der BSW-Pressemeldung "über 2 GWh".
 
 Zweitens, der MaStR-BSW-Versatz. Q1 2026 zeigt 3,04 GW PV in MaStR-Rohdaten gegen 3,51 GWp bei BSW. Die Differenz von rund 13% liegt im Nachmeldungs-Erwartungswert der BNetzA. In sechs Monaten ist der MaStR-Wert höher, der BSW-Wert vermutlich gleich. Die Richtung wird sich nicht drehen, die absolute Höhe schon.
 
@@ -89,13 +91,15 @@ Drittens, der Q1-Snapshot. Das gemessene Verhältnis 38% ist ein Quartalswert. Q
 
 ## Anhang A: Datenbasis und Vorgehen
 
-Drei Rohquellen, zwei externe Branchenbefunde, ein Referentenentwurf.
+Drei Rohquellen, drei externe Branchenbefunde, ein Referentenentwurf.
 
 Das Marktstammdatenregister liefert die Grundlage. Aus den Stammdaten wurden zwei Bestandsströme gefiltert: PV-Anlagen mit Inbetriebnahmedatum ab 2020 und Status In Betrieb, Speicheranlagen mit denselben Filtern. Die PV-Reihe nutzt Nettonennleistung in der Konvention von BNetzA und BSW. Die Speicher-Reihe nutzt Bruttoleistung, ebenfalls BSW-Konvention. Beide Reihen sind in Quartalsbuckets aggregiert, von Q1 2020 bis Q1 2026, Stand 23.04.2026.
 
-Aus diesen Reihen wurden drei Metriken pro Quartal berechnet: PV-Zubau in GW, Speicher-Zubau in GW, Verhältnis Speicher pro PV. Für die Saisonalitäts-Kontrolle wurde zusätzlich eine rollende 4-Quartals-Summe gebildet und auf dieser Summe das Vorjahresvergleichs-Wachstum berechnet. Die rollende 4Q-Summe glättet Wetter- und Auftrags-Saisonalität, kann aber Förder-getriebene Sprünge wie das BEG-Stop-Risiko von Q4 2024 nicht trennen.
+Für die GWh-Sicht kommt eine zweite Speicher-Tabelle dazu, `mastr_storage_units`, mit dem Feld `NutzbareSpeicherkapazitaet`. Die Verbindung zur Hauptreihe läuft über `units.VerknuepfteEinheit = extended.EinheitMastrNummer`. Die Filter folgen der battery-charts.de-Methodik der RWTH Aachen: Speicherkapazität größer 0,3 kWh, Leistung größer 0,3 kW, definierte Batterietechnologie (das schließt Pumpspeicher und Wasserstoff-Speicher aus), gültiges Inbetriebnahmedatum. Aussortierte Einträge mit fehlenden Werten könnten über den Monats-Kategorie-Durchschnitt imputiert werden, sind aber mit 0,003 Prozent so selten, dass die Imputation hier weggelassen wurde.
 
-Die externe Prüfung lief gegen zwei BSW-Solar-Pressemitteilungen vom 03.05.2026, eine für PV (3,51 GWp, -6% YoY) und eine für Speicher (>2 GWh, +67% YoY, Bestand 28 GWh). Plus eine Solarserver-Wiedergabe vom 04.05.2026, die den Großspeicher-Anteil mit +270% YoY beziffert. Die Differenz zur MaStR-Rohzahl wurde gegen den BNetzA-Standardaufschlag von 15% (dokumentiert via pv-magazine.de vom 15.04.2026) abgeglichen und liegt im erwartbaren Korridor.
+Aus diesen Reihen wurden vier Metriken pro Quartal berechnet: PV-Zubau in GW, Speicher-Zubau in GW, Speicher-Zubau in GWh, Verhältnis Speicher pro PV. Für die Saisonalitäts-Kontrolle wurde zusätzlich eine rollende 4-Quartals-Summe gebildet und auf dieser Summe das Vorjahresvergleichs-Wachstum berechnet. Die rollende 4Q-Summe glättet Wetter- und Auftrags-Saisonalität, kann aber Förder-getriebene Sprünge wie das BEG-Stop-Risiko von Q4 2024 nicht trennen.
+
+Die externe Prüfung lief gegen zwei BSW-Solar-Pressemitteilungen vom 03.05.2026, eine für PV (3,51 GWp, -6% YoY) und eine für Speicher (>2 GWh, +67% YoY, Bestand 28 GWh). Plus eine Solarserver-Wiedergabe vom 04.05.2026, die den Großspeicher-Anteil mit +270% YoY beziffert. Plus eine ess-news.com-Auswertung vom 09.01.2026, die den Speicher-Bestand Ende 2025 auf 24 GWh beziffert (auch auf BSW-Solar-Daten basierend). Die Differenz zur MaStR-Rohzahl wurde gegen den BNetzA-Standardaufschlag von 15% (dokumentiert via pv-magazine.de vom 15.04.2026) abgeglichen und liegt im erwartbaren Korridor. Eigene Aggregation Bestand Ende 2025 ergibt 24 bis 25 GWh, was sich mit ess-news deckt. Eigene Aggregation Q1 2026 Quartalszubau ergibt 2,08 GWh, was sich mit der BSW-Pressemeldung "über 2 GWh" deckt. Der BSW-Wert "+67 Prozent YoY" ließ sich nicht direkt reproduzieren (eigene Q1-zu-Q1-YoY-Berechnung ergibt +29 Prozent), die Differenz erklärt sich vermutlich über eine andere YoY-Basis (Bestandsänderung statt Quartalszubau, späterer Datenstand).
 
 Der regulatorische Kontext kommt aus dem Goerg-Memorandum vom 24.04.2026 zum Referentenentwurf StromVKG. Dort sind die 10 Stunden Dauerleistung als Förderbedingung für Langzeitkapazitäten festgeschrieben. Diese Schwelle wurde in der Analyse mit der MaStR-Verteilung der Energie-zu-Leistung-Verhältnisse abgeglichen, soweit aus den Stammdaten plausibilisierbar.
 
@@ -137,7 +141,20 @@ rolling_4q_GW(Q1 2025, Speicher) = 4,29 GW
 yoy_rolling_4q(Q1 2026, Speicher) = -1,4%
 ```
 
-Die Wahl Bruttoleistung statt Nettonennleistung für Speicher folgt der BSW-Konvention. Der Unterschied liegt in der Praxis bei rund 5 bis 7%. PV bleibt bei Nettonennleistung, weil BNetzA- und BSW-Statistiken sie so ausweisen. Eine Vergleichbarkeit Speicher-AC gegen PV-DC bleibt eine methodische Einschränkung der GW-Ratio. Eine GWh-Sicht wäre vergleichbarer, scheitert aber an der Bereinigungsbedürftigkeit von `NutzbareSpeicherkapazitaet`.
+Die Wahl Bruttoleistung statt Nettonennleistung für Speicher folgt der BSW-Konvention. Der Unterschied liegt in der Praxis bei rund 5 bis 7%. PV bleibt bei Nettonennleistung, weil BNetzA- und BSW-Statistiken sie so ausweisen. Eine Vergleichbarkeit Speicher-AC gegen PV-DC bleibt eine methodische Einschränkung der GW-Ratio. Die GWh-Sicht ist parallel zur GW-Sicht ausgewiesen, mit der Methodik:
+
+```text
+zubau_GWh(q) = sum( u.NutzbareSpeicherkapazitaet / 1e6 )
+                für alle Speicher s
+                mit  storage_units.VerknuepfteEinheit = s.EinheitMastrNummer
+                und  s.Inbetriebnahmedatum in q
+                und  s.Batterietechnologie ist gesetzt
+                und  u.NutzbareSpeicherkapazitaet > 0,3 kWh
+                und  s.Bruttoleistung > 0,3 kW
+                und  s.DatumEndgueltigeStilllegung ist NULL
+```
+
+Q1-Werte über alle Klassen: zubau_GWh(Q1 2024) = 1,47 GWh, zubau_GWh(Q1 2025) = 1,61 GWh, zubau_GWh(Q1 2026) = 2,08 GWh.
 
 Filter und Ausschlüsse: Anlagen ohne Inbetriebnahmedatum oder ohne Betriebsstatus In Betrieb sind ausgeschlossen. Storno-Einträge sind ausgeschlossen. Anlagen mit Inbetriebnahme vor 2020 sind ausgeschlossen, weil die Reihen für den Vergleich auf einen einheitlichen Zeitraum normiert sind.
 
