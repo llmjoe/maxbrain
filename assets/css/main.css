@@ -17,9 +17,12 @@
   --dark: #111115;
   --serif: 'DM Serif Display', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
-  --container: 1100px;
+  --container: 1180px;
   --reading: 720px;
+  --figure: 980px;
   --header-h: 56px;
+  --toc-width: 220px;
+  --toc-rail: 40px;
 }
 
 html { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; -webkit-font-smoothing: antialiased; }
@@ -95,6 +98,25 @@ img, iframe { max-width: 100%; }
 .hero-card__media { aspect-ratio: 4/3; background: var(--bg-subtle); }
 .hero-card__media img { width: 100%; height: 100%; object-fit: cover; }
 .hero-card__placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg-subtle), #ebedf2); }
+.hero-card__lead {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  padding: clamp(28px, 4vw, 48px);
+  background: linear-gradient(135deg, var(--accent-light) 0%, #ffffff 100%);
+  gap: 8px;
+}
+.hero-card__lead-number {
+  font-family: var(--serif);
+  font-size: clamp(56px, 8vw, 96px); line-height: 1;
+  color: var(--accent-strong);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.hero-card__lead-label {
+  font-size: 13px; line-height: 1.4;
+  color: var(--ink-mid);
+  max-width: 280px; text-wrap: pretty;
+}
 .hero-card__body { padding: 36px; background: var(--bg-card); display: flex; flex-direction: column; justify-content: space-between; }
 .hero-card__body h2 {
   font-family: var(--serif); font-weight: 400;
@@ -126,6 +148,7 @@ img, iframe { max-width: 100%; }
 .grid-card__media { aspect-ratio: 16/9; background: var(--bg-subtle); }
 .grid-card__media img { width: 100%; height: 100%; object-fit: cover; }
 .grid-card__placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg-subtle), #ebedf2); }
+.grid-card__media img { object-position: center; }
 .grid-card__body { padding: 18px 20px 22px; }
 .grid-card__topline { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
 .grid-card__body h3 {
@@ -144,8 +167,13 @@ img, iframe { max-width: 100%; }
 .article__layout {
   max-width: var(--container); margin: 0 auto;
   padding: 48px 0;
-  display: grid; grid-template-columns: 200px 1fr; gap: clamp(40px, 5vw, 80px);
+  display: grid; grid-template-columns: var(--toc-rail) 1fr;
+  gap: clamp(28px, 4vw, 48px);
   align-items: start;
+  transition: grid-template-columns 0.25s ease;
+}
+.article__layout.toc-open {
+  grid-template-columns: var(--toc-width) 1fr;
 }
 .article__head { margin-bottom: 48px; }
 .article__date { display: inline-block; }
@@ -221,41 +249,35 @@ img, iframe { max-width: 100%; }
   border-bottom: 1px solid var(--rule);
 }
 .article__body th { font-weight: 600; color: var(--ink-mid); }
-/* Charts/Figures: kompakter als die Lese-Breite und mittig zentriert. */
-.article__body p:has(> img) {
-  max-width: 600px; width: 100%;
-  margin: 36px auto;
-}
-.article__body p > img {
-  display: block; width: 100%; height: auto;
-  background: var(--bg-subtle);
-  border: 1px solid var(--rule); border-radius: 8px;
-  padding: 14px;
-  scroll-margin-top: calc(var(--header-h) + 16px);
-}
+/* Charts/Figures: deutlich groesser als die Lese-Breite. Brechen aus der
+   Reading-Spalte aus und nutzen die volle Content-Breite. Ohne Rahmen, damit
+   die Figure direkt im Lesefluss steht. */
+.article__body p:has(> img),
 .article__body figure {
-  margin: 36px auto;
-  width: 100%; max-width: 600px;
-  background: var(--bg-subtle);
-  border: 1px solid var(--rule); border-radius: 8px;
-  padding: 14px;
+  width: 100%;
+  max-width: var(--figure);
+  margin: 44px auto;
   scroll-margin-top: calc(var(--header-h) + 16px);
 }
-/* Interaktive Karte darf etwas breiter, weil mit Slider/Hover mehr Platz braucht. */
-.article__body figure.interactive-map { max-width: 720px; }
+.article__body p > img,
 .article__body figure img {
   display: block; width: 100%; height: auto;
-  border-radius: 4px; border: 0; padding: 0; margin: 0;
+  background: transparent;
+  border: 0; border-radius: 4px;
+  padding: 0; margin: 0;
 }
+/* Interaktive Karte darf so breit wie der Content sein. */
+.article__body figure.interactive-map { max-width: var(--figure); }
 .article__body figure.interactive-map iframe {
   display: block; width: 100%;
   border-radius: 4px;
   background: #fff;
 }
 .article__body figure figcaption {
-  font-size: 12px; color: var(--ink-faint);
-  margin-top: 10px; line-height: 1.5;
+  font-size: 13px; color: var(--ink-faint);
+  margin-top: 12px; line-height: 1.55;
   padding: 0 4px;
+  max-width: var(--reading); margin-left: auto; margin-right: auto;
 }
 .article__foot {
   display: flex; justify-content: space-between; align-items: center;
@@ -264,21 +286,93 @@ img, iframe { max-width: 100%; }
 }
 
 /* ── Article TOC sidebar ─────────────────────────────────────────────────── */
+/* Default-Zustand: TOC ist eingeklappt zu einer schmalen Schiene mit Toggle-
+   Button und vertikaler Progress-Bar. Klick auf den Button blendet die Liste
+   der Sektionen ein. LocalStorage merkt die User-Praeferenz. */
 .toc {
   position: sticky; top: calc(var(--header-h) + 12px);
-  align-self: start; max-height: calc(100vh - var(--header-h) - 32px);
-  overflow-y: auto; scrollbar-width: none;
+  align-self: start;
+  max-height: calc(100vh - var(--header-h) - 32px);
+  overflow: hidden;
+  width: 100%;
 }
-.toc::-webkit-scrollbar { display: none; }
+.toc__rail {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  width: var(--toc-rail);
+}
+.toc__toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px;
+  background: #fff;
+  border: 1px solid var(--rule); border-radius: 8px;
+  color: var(--ink-mid);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.toc__toggle:hover {
+  border-color: var(--ink-faint);
+  color: var(--ink);
+}
+.toc__toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.toc__toggle svg { width: 16px; height: 16px; }
+.toc__rail-progress {
+  width: 2px;
+  flex: 1; min-height: 60px; max-height: 220px;
+  background: var(--rule);
+  border-radius: 1px;
+  position: relative;
+}
+.toc__rail-progress-bar {
+  position: absolute; left: 0; right: 0; top: 0;
+  height: 0;
+  background: var(--accent);
+  border-radius: 1px;
+  transition: height 0.4s ease;
+}
+.toc__rail-count {
+  font-size: 9px; letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: 600; text-transform: uppercase;
+}
+.toc__panel {
+  display: none;
+  overflow-y: auto; scrollbar-width: none;
+  max-height: calc(100vh - var(--header-h) - 32px);
+  padding-right: 4px;
+}
+.toc__panel::-webkit-scrollbar { display: none; }
+.toc.is-open {
+  width: var(--toc-width);
+}
+.toc.is-open .toc__rail { display: none; }
+.toc.is-open .toc__panel { display: block; }
 .toc__back {
   display: inline-flex; align-items: center; gap: 5px;
-  font-size: 12px; color: var(--ink-faint); margin-bottom: 32px;
+  font-size: 12px; color: var(--ink-faint); margin-bottom: 24px;
 }
 .toc__back:hover { color: var(--ink); }
+.toc__head {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px;
+}
 .toc__title {
   font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-faint); font-weight: 600; margin-bottom: 16px;
+  color: var(--ink-faint); font-weight: 600;
 }
+.toc__close {
+  background: none; border: 0;
+  color: var(--ink-faint);
+  font-size: 18px; line-height: 1; cursor: pointer;
+  padding: 2px 6px;
+}
+.toc__close:hover { color: var(--ink); }
 .toc__nav ul { list-style: none; counter-reset: toc; }
 .toc__nav ul ul { padding-left: 12px; margin-top: 4px; }
 .toc__nav li { counter-increment: toc; }
@@ -303,9 +397,18 @@ img, iframe { max-width: 100%; }
 .toc__progress { margin-top: 24px; height: 2px; background: var(--rule); border-radius: 1px; }
 .toc__progress-bar { height: 100%; width: 0; background: var(--accent); transition: width 0.4s ease; border-radius: 1px; }
 @media (max-width: 900px) {
-  .article__layout { grid-template-columns: 1fr; }
-  .toc { position: static; max-height: none; margin-bottom: 16px; }
-  .toc__progress { display: none; }
+  .article__layout,
+  .article__layout.toc-open { grid-template-columns: 1fr; }
+  .toc { position: static; max-height: none; margin-bottom: 8px; width: 100%; }
+  .toc__rail {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+  .toc__rail-progress { display: none; }
+  .toc__rail-count { writing-mode: horizontal-tb; transform: none; }
+  .toc.is-open { width: 100%; }
 }
 
 /* ── List page ───────────────────────────────────────────────────────────── */

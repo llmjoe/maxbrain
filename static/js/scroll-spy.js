@@ -1,12 +1,57 @@
-// Lightweight scroll spy for the article TOC.
-// Highlights the link in #toc-nav whose anchor target is currently in view
-// and updates the progress bar #toc-progress.
+// Scroll spy + ausklappbares TOC.
+//
+// 1. Toggle: rail/panel Umschaltung, Praeferenz in localStorage.
+// 2. Spy: setzt is-active auf Link der gerade sichtbaren Sektion.
+// 3. Progress: aktualisiert Progress-Bar im Rail (vertikal) und im Panel.
 
 (function () {
+  const layout = document.getElementById("article-layout");
+  const toc = document.getElementById("article-toc");
   const tocNav = document.getElementById("toc-nav");
+  const panel = document.getElementById("toc-panel");
+  const toggleBtn = toc ? toc.querySelector(".toc__toggle") : null;
+  const closeBtn = toc ? toc.querySelector(".toc__close") : null;
   const progressBar = document.getElementById("toc-progress");
-  if (!tocNav) return;
+  const railProgressBar = document.getElementById("toc-rail-progress-bar");
+  const railCount = document.getElementById("toc-rail-count");
 
+  if (!toc || !tocNav) return;
+
+  const STORAGE_KEY = "maxbrain.toc.open";
+
+  // ── Toggle ────────────────────────────────────────────────────────────────
+  function setOpen(open) {
+    if (open) {
+      toc.classList.add("is-open");
+      if (layout) layout.classList.add("toc-open");
+      if (panel) panel.hidden = false;
+      if (toggleBtn) {
+        toggleBtn.setAttribute("aria-expanded", "true");
+        toggleBtn.setAttribute("aria-label", "Inhaltsverzeichnis einklappen");
+      }
+    } else {
+      toc.classList.remove("is-open");
+      if (layout) layout.classList.remove("toc-open");
+      if (panel) panel.hidden = true;
+      if (toggleBtn) {
+        toggleBtn.setAttribute("aria-expanded", "false");
+        toggleBtn.setAttribute("aria-label", "Inhaltsverzeichnis ausklappen");
+      }
+    }
+    try { localStorage.setItem(STORAGE_KEY, open ? "1" : "0"); } catch (e) {}
+  }
+
+  function toggle() { setOpen(!toc.classList.contains("is-open")); }
+
+  // Init: gespeicherte Praeferenz nutzen, sonst collapsed.
+  let initial = "0";
+  try { initial = localStorage.getItem(STORAGE_KEY) || "0"; } catch (e) {}
+  setOpen(initial === "1");
+
+  if (toggleBtn) toggleBtn.addEventListener("click", toggle);
+  if (closeBtn) closeBtn.addEventListener("click", () => setOpen(false));
+
+  // ── Spy ───────────────────────────────────────────────────────────────────
   const links = Array.from(tocNav.querySelectorAll("a[href^='#']"));
   if (!links.length) return;
 
@@ -20,6 +65,8 @@
 
   if (!targets.length) return;
 
+  if (railCount) railCount.textContent = String(targets.length).padStart(2, "0");
+
   let activeIndex = 0;
 
   function setActive(index) {
@@ -27,14 +74,15 @@
     targets[activeIndex].link.classList.remove("is-active");
     targets[index].link.classList.add("is-active");
     activeIndex = index;
-    if (progressBar) {
-      const pct = ((index + 1) / targets.length) * 100;
-      progressBar.style.width = pct + "%";
-    }
+    const pct = ((index + 1) / targets.length) * 100;
+    if (progressBar) progressBar.style.width = pct + "%";
+    if (railProgressBar) railProgressBar.style.height = pct + "%";
   }
 
   targets[0].link.classList.add("is-active");
-  if (progressBar) progressBar.style.width = (1 / targets.length) * 100 + "%";
+  const initialPct = (1 / targets.length) * 100;
+  if (progressBar) progressBar.style.width = initialPct + "%";
+  if (railProgressBar) railProgressBar.style.height = initialPct + "%";
 
   const observer = new IntersectionObserver(
     (entries) => {

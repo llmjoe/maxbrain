@@ -13,10 +13,19 @@
 
 {{ with $hero }}
 <section class="hero">
-  <a class="hero-card" href="{{ .RelPermalink }}">
+  <a class="hero-card{{ if .Params.lead_number }} hero-card--lead{{ end }}" href="{{ .RelPermalink }}">
     <div class="hero-card__media">
-      {{ with .Params.cover }}<img src="{{ . | relURL }}" alt="" loading="lazy" />
-      {{ else }}<div class="hero-card__placeholder"></div>{{ end }}
+      {{ if .Params.lead_number }}
+        <div class="hero-card__lead">
+          <span class="hero-card__lead-number">{{ .Params.lead_number }}</span>
+          {{ with .Params.lead_label }}<span class="hero-card__lead-label">{{ . }}</span>{{ end }}
+        </div>
+      {{ else }}
+        {{ $cover := .Resources.GetMatch .Params.cover }}
+        {{ if $cover }}<img src="{{ $cover.RelPermalink }}" alt="" loading="lazy" />
+        {{ else }}{{ with .Params.cover }}<img src="{{ . | relURL }}" alt="" loading="lazy" />
+        {{ else }}<div class="hero-card__placeholder"></div>{{ end }}{{ end }}
+      {{ end }}
     </div>
     <div class="hero-card__body">
       <div>
@@ -39,8 +48,10 @@
     {{ range $rest }}
     <a class="grid-card" href="{{ .RelPermalink }}">
       <div class="grid-card__media">
-        {{ with .Params.cover }}<img src="{{ . | relURL }}" alt="" loading="lazy" />
-        {{ else }}<div class="grid-card__placeholder"></div>{{ end }}
+        {{ $cover := .Resources.GetMatch .Params.cover }}
+        {{ if $cover }}<img src="{{ $cover.RelPermalink }}" alt="" loading="lazy" />
+        {{ else }}{{ with .Params.cover }}<img src="{{ . | relURL }}" alt="" loading="lazy" />
+        {{ else }}<div class="grid-card__placeholder"></div>{{ end }}{{ end }}
       </div>
       <div class="grid-card__body">
         <div class="grid-card__topline">

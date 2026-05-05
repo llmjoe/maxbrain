@@ -34,7 +34,7 @@ Der deutsche Speichermarkt zerfällt in zwei Welten, und sie folgen unterschiedl
 
 Die BSW-Schlagzeile "Speicher plus 67 Prozent" lässt sich gegen den MaStR-Cut prüfen. Eigene Aggregation Q1 2026 ergibt 2,08 GWh Quartalszubau gegen Q1 2025 mit 1,61 GWh, also plus 29 Prozent über alle Klassen. Der Unterschied zur Branchenmeldung erklärt sich durch eine andere Berechnungsbasis (BSW vergleicht teilweise Bestandsänderung statt Quartalszubau und nutzt einen späteren Datenstand). Ende 2025 liegt der Bestand bei 24 bis 25 GWh, das deckt sich mit den 24 GWh, die ess-news.com auf Basis von BSW-Solar berichtet. Auf Klassen-Ebene zeigt sich die Bewegung trotzdem klar: Heim-Speicher GWh fällt minus 11 Prozent YoY, Großbatterie-GWh wächst plus 77 Prozent.
 
-![Drei Linien auf gemeinsamer Zeitachse: Heim-PV und Heim-Speicher fallen Q1 2026 parallel, Großbatterie ab 10 MW wächst eigenständig](zwei_welten_speicher_pv.png)
+{{< map src="/maps/speicher-pv-relation-q1-2026/zwei_welten_speicher_pv.html" caption="Drei Linien auf gemeinsamer Zeitachse: Heim-PV und Heim-Speicher fallen Q1 2026 parallel, Großbatterie ab 10 MW wächst eigenständig" >}}
 
 ![Wenige Großbatterien tragen einen großen Anteil des Leistungsvolumens: 99 Prozent der Anlagen sind unter 30 kW, 43 Prozent der Leistung in 183 Anlagen ab 10 MW](speicher_groessen_verteilung.png)
 

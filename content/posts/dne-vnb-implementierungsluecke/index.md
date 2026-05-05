@@ -61,7 +61,7 @@ Der erste Hauptbefund ist sektorweit: dNE-Readiness ist vor allem ein Planungspr
 
 Der zweite Hauptbefund ist gegen die einfache Größengeschichte gerichtet. Der Zusammenhang zwischen `readiness_score` und `ns_points` ist schwach, auf Log-Skala nur moderat (`0,34`). Viel enger am Gesamtbild liegen `planning_score` (`0,93`) und `digital_score` (`0,92`). Anders gesagt: Größe hilft, aber sie erklärt die Unterschiede nicht gut genug.
 
-![Größe (NS-Anschlusspunkte, Log-Skala) vs. Readiness-Score](vnb_dne_size_vs_readiness.png)
+{{< map src="/maps/dne-vnb-implementierungsluecke/vnb_dne_size_vs_readiness.html" caption="Größe (NS-Anschlusspunkte, Log-Skala) vs. Readiness-Score" >}}
 
 Dafür sprechen die drei robustesten Beispiel-Fälle.
 

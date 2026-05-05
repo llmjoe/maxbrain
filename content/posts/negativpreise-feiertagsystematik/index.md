@@ -32,7 +32,7 @@ Der 1. Mai 2026 war kein Ausreißer, sondern der bisher tiefste Tag eines stetig
 
 ![Boxplot der Day-Ahead-Spotpreise nach Tagestyp 2018-2026: Werktag 1,47 Prozent, Brückentag 2,32 Prozent, Wochenende 7,01 Prozent, Feiertag 9,04 Prozent negative Stunden](negativpreise_tagestyp_boxplot.png)
 
-![Heatmap negativer Day-Ahead-Stunden nach Tagestyp und Tageszeit: Mittagskonzentration an arbeitsfreien Tagen](negativpreise_heatmap_stunde.png)
+{{< map src="/maps/negativpreise-feiertagsystematik/negativpreise_heatmap_stunde.html" caption="Heatmap negativer Day-Ahead-Stunden nach Tagestyp und Tageszeit: Mittagskonzentration an arbeitsfreien Tagen" >}}
 
 ## Was der Mainstream-Frame verdeckt
 

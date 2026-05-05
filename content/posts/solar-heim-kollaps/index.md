@@ -30,7 +30,7 @@ Sie verläuft auch regional auseinander. Wo Eigenheim-Anlagen den Markt bestimme
 
 ![Solar-Q1-Wachstum nach Bundesland Q1 2025 zu Q1 2026: Sachsen, Bayern, Niedersachsen mit zweistelligen Rückgängen, Brandenburg und Saarland mit zweistelligem Wachstum](solar_bundeslaender_yoy.png)
 
-![Rolling 4Q YoY-Wachstumsrate Solar-Zubau Q1 2026: Residential, Commercial und Large Roof negativ, Utility positiv](solar_heim_kollaps_yoy_rolling.png)
+{{< map src="/maps/solar-heim-kollaps/solar_heim_kollaps_yoy_rolling.html" caption="Rolling 4Q YoY-Wachstumsrate Solar-Zubau Q1 2026: Residential, Commercial und Large Roof negativ, Utility positiv" >}}
 
 ![Anteil der Solar-Segmente am Quartalszubau Q1 2020 bis Q1 2026: Residential von 20 auf 9 Prozent, Utility von 38 auf 63 Prozent](solar_heim_kollaps_mix_stacked.png)
 

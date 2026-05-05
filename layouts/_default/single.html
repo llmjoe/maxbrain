@@ -1,14 +1,45 @@
 {{ define "main" }}
 <article class="article">
-  <div class="article__layout">
-    <aside class="toc" aria-label="Inhaltsverzeichnis">
-      <a class="toc__back" href="{{ "/" | relURL }}">← Alle Analysen</a>
-      <div class="toc__title">In diesem Artikel</div>
-      <nav class="toc__nav" id="toc-nav">
-        {{ .TableOfContents }}
-      </nav>
-      <div class="toc__progress" aria-hidden="true"><div class="toc__progress-bar" id="toc-progress"></div></div>
+  <div class="article__layout" id="article-layout">
+    <aside class="toc" id="article-toc" aria-label="Inhaltsverzeichnis">
+      {{/* Rail-Variante (collapsed): Toggle, vertikale Progress-Bar, Section-Count. */}}
+      <div class="toc__rail" id="toc-rail">
+        <button class="toc__toggle" type="button"
+                aria-expanded="false"
+                aria-controls="toc-panel"
+                aria-label="Inhaltsverzeichnis ausklappen"
+                title="Inhaltsverzeichnis ausklappen">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="4.5" x2="13" y2="4.5" />
+            <line x1="3" y1="8" x2="13" y2="8" />
+            <line x1="3" y1="11.5" x2="9" y2="11.5" />
+          </svg>
+        </button>
+        <div class="toc__rail-progress" aria-hidden="true">
+          <div class="toc__rail-progress-bar" id="toc-rail-progress-bar"></div>
+        </div>
+        <span class="toc__rail-count" id="toc-rail-count" aria-hidden="true"></span>
+      </div>
+
+      {{/* Panel-Variante (expanded): Back-Link, Liste, klassische Progress-Bar. */}}
+      <div class="toc__panel" id="toc-panel" hidden>
+        <a class="toc__back" href="{{ "/" | relURL }}">← Alle Analysen</a>
+        <div class="toc__head">
+          <span class="toc__title">In diesem Artikel</span>
+          <button class="toc__close" type="button"
+                  aria-label="Inhaltsverzeichnis einklappen"
+                  title="Einklappen">×</button>
+        </div>
+        <nav class="toc__nav" id="toc-nav">
+          {{ .TableOfContents }}
+        </nav>
+        <div class="toc__progress" aria-hidden="true">
+          <div class="toc__progress-bar" id="toc-progress"></div>
+        </div>
+      </div>
     </aside>
+
     <div class="article__content">
       <header class="article__head">
         <span class="eyebrow article__date">{{ .Date.Format "Jan. 2006" }}</span>

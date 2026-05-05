@@ -30,6 +30,8 @@ Im selben Bericht stand eine zweite, scheinbar gegenlaeufige Zahl. Die regionale
 
 In Summe: das deutsche Netzentgelt-System ist strukturell instabil. Zwei sich gegenlaeufig bewegende Effekte erzeugen Zickzack-Zeitreihen ohne klaren Trend. Wer in dem Mustern Entwarnung liest, liest falsch.
 
+{{< map src="/maps/netzentgelt-explosion-2024/netzentgelte_choropleth_2020_2024.html" caption="Choropleth Verteilnetzentgelte je Bundesland 2020-2024: per Slider laesst sich das Jahr wechseln, beim Hover erscheint der mengengewichtete Durchschnitt. Bayern springt 2024 sichtbar in die mittlere Klasse, Brandenburg und MV bleiben oben." >}}
+
 ## Was der Mainstream-Frame verdeckt
 
 Die oeffentliche Kommunikation 2024 fokussierte auf zwei Dinge: den UeNB-Sprung als kurzfristigen Schock und die Hoffnung, die Spreizung sei kein dauerhaftes Problem. Beide Lesarten greifen zu kurz.
