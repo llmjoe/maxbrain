@@ -103,7 +103,7 @@ Im vierten Schritt wird der Befund gegen die externe Recherche und gegen den Arg
 
 Ausgenommen sind Verkehr, also die Lkw-Maut-Differenzierung, Landwirtschaft, also die Diesel-Rueckerstattung, und Gebaeude, also die Bundesfoerderung effiziente Gebaeude. Auch ausgenommen ist die Kohle-Strukturhilfe von 40 Milliarden Euro ueber 14 Jahre, weil sie regional an Strukturwandel-Akteure fliesst und nicht an die hier betrachtete energieintensive Stamm-Industrie.
 
-## Anhang B: Verformelung der Berechnung
+## Verformelung der Berechnung
 
 ```text
 ets_gratis_werttransfer_eur(jahr)
